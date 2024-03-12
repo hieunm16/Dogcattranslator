@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dog &amp; Cat Translator Prank</string>
+    <string name="animal_translator">Traducteur d\'Animaux</string>
+    <string name="let_play">Jouons</string>
+    <string name="sound">Son</string>
+    <string name="translator">Traducteur</string>
+    <string name="training">Entraînement</string>
+    <string name="whistle">Sifflet</string>
+    <string name="tap_to_record">Appuyez pour enregistrer</string>
+    <string name="processing">Traitement</string>
+    <string name="your_result">Votre Résultat</string>
+    <string name="back_to_translating">Retour à la Traduction</string>
+    <string name="lets_play">Jouons</string>
+    <string name="install">Installer</string>
+    <string name="this_action_can_contain_ads">Cette action peut contenir des publicités…</string>
+    <string name="get_started">Commencer</string>
+    <string name="next">Suivant</string>
+    <string name="skip">Passer</string>
+    <string name="language">Langue</string>
+    <string name="intro_1">Découvrez notre fonction de Traducteur d\'Animaux, où le rêve de chaque propriétaire d\'animal devient réalité. Enregistrez les sons uniques de votre animal de compagnie, et la technologie alimentée par l\'IA de notre application vous fournit une traduction fantaisiste. C\'est une façon amusante et délicieuse de deviner ce que vos amis à fourrure pourraient dire ! N\'oubliez pas de vous amuser et de vous connecter plus profondément avec vos compagnons animaux à travers la joie de la conversation. 🐶🐱🐹</string>
+    <string name="intro_2">Toujours curieux de l\'humeur de votre animal de compagnie ? Avec notre Traducteur d\'Humeur d\'Animaux, enregistrez simplement leurs sons et notre application traduit ces aboiements et ronronnements en émotions, vous permettant de savoir si votre ami à fourrure est joyeux, affamé ou a besoin d\'amour. Connectez-vous à un niveau cœur à cœur avec vos compagnons animaux ! 🐾❤️</string>
+    <string name="intro_3">Libérez le potentiel de votre animal de compagnie avec notre fonction d\'Assistant d\'Entraînement d\'Animaux ! Des exercices d\'entraînement sur mesure, des conseils de renforcement positif et des routines personnalisables vous guident pour enseigner à vos amis à fourrure de nouveaux tours et de bonnes habitudes. Créez des liens, entraînez-vous et amusez-vous en grandissant ensemble avec votre animal de compagnie ! 🐕🎾📚</string>
+    <string name="with_your_pet">avec votre animal de compagnie !</string>
+    <string name="cat">Chat</string>
+    <string name="dog">Chien</string>
+    <string name="s_angry">En colère</string>
+    <string name="s_enjoyed">Ravi</string>
+    <string name="s_sad">Triste</string>
+    <string name="s_happy">Heureux</string>
+    <string name="s_cutie">Mignon</string>
+    <string name="s_sileneed">Silencieux</string>
+    <string name="s_elated">Exalté</string>
+    <string name="s_tired">Fatigué</string>
+    <string name="s_excited">Excité</string>
+    <string name="s_relaxed">Détendu</string>
+    <string name="hamster">Hamster</string>
+    <string name="permission_record">L\'application a besoin de l\'autorisation d\'enregistrement pour effectuer cette fonction</string>
+    <string name="translation_is_in_progress_n_please_wait_a_moment">La traduction est en cours, \n Veuillez patienter un moment…</string>
+    <string name="check_my_result">Vérifiez Mon Résultat</string>
+    <string name="train_your_pet">Entraînez votre animal de compagnie</string>
+    <string name="pet_sounds">Sons d\'animaux</string>
+    <string name="how_to_train_a_dog_to_sit">Comment dresser un chien à s\'asseoir ?</string>
+    <string name="how_to_train_a_dog_to_stay">How to train a dog to stay?</string>
+    <string name="how_to_train_your_dog_to_lie_down">Comment apprendre à votre chien à s\'allonger ?</string>
+    <string name="how_to_keep_your_cat_healthy_and_happy">Comment garder votre chat en bonne santé et heureux ?</string>
+    <string name="should_i_spay_or_neuter_my_cat">Dois-je stériliser ou stériliser mon chat ?</string>
+    <string name="des_1">
+    <![CDATA[
+        <b>Enseignez à votre chien à s\'asseoir en six étapes faciles</b><br>
+        "1. Avec votre chien en position debout, tenez une friandise appétissante près de son nez.<br><br>" 
+        "2. En gardant la friandise près du nez de votre chien, déplacez votre main en arc au-dessus de sa tête. Lorsque le chien relève la tête pour suivre la friandise, son postérieur ira au sol. Dès qu'il s'assoit, félicitez-le et donnez-lui la friandise.<br><br>" 
+        "3. Pratiquez cela plusieurs fois lors de sessions courtes mais régulières.<br><br>" 
+        "4. Comme votre chien reçoit toujours une friandise lorsqu'il s'assoit, vous constaterez bientôt qu'il reste assis plus longtemps. Vous pouvez maintenant ajouter le mot-cue 'assis' lorsqu'il s'apprête à s'asseoir. Faites attention à ne pas le dire avant que votre chien ne se mette en position, sinon il pourrait l'associer au mauvais mouvement.<br><br>" 
+        "5. Pratiquez cela plusieurs fois lors de sessions courtes mais régulières.<br><br>" 
+        "6. Donnez un signal 'ok' pour indiquer à votre chien que sa formation est terminée.<br><br>"
+    ]]>
+</string>
+
+
+    <string name="des_2">
+    <![CDATA[
+        <b>Un guide en six étapes pour enseigner à un chien à rester</b><br>
+        "1. Demandez à votre chien de s\'allonger.<br><br>" 
+        "2. Donnez à votre chien un signal manuel - par exemple, un signe d'arrêt avec la paume de votre main face à votre chien.<br><br>" 
+        "3. Au lieu de donner immédiatement la friandise à votre chien, attendez quelques secondes. Dites 'reste' puis donnez-la-leur. Il est important de récompenser votre chien pendant qu'il est toujours allongé, et non s'il s'est relevé.<br><br>" 
+        "4. Pratiquez cela plusieurs fois lors de sessions courtes mais régulières, en augmentant progressivement la durée pendant laquelle votre chien reste en position couchée.<br><br>" 
+        "5. Ensuite, vous pouvez commencer à augmenter la distance entre vous et votre chien. Commencez par reculer d'un pas avant de lui donner la récompense, puis augmentez lentement et progressivement la distance.<br><br>" 
+        "6. Pratiquez dans de nombreux endroits différents - autour de la maison, dans le jardin, chez un ami et dans le parc local.<br><br>" 
+        "<b>Astuces supplémentaires</b><br>" 
+        "1. Il est important d'augmenter progressivement le temps que vous voulez que votre chien reste. Entraînez-vous régulièrement et augmentez le temps de quelques secondes à chaque fois.<br><br>" 
+        "2. Soyez attentif aux signes indiquant que votre chien va interrompre le 'reste' et récompensez-le avant qu'il ne le fasse - préparez-le à gagner plutôt qu'à échouer.<br><br>" 
+        "3. Vous pouvez également apprendre à votre chien à rester en position 'assis'. Suivez les étapes ci-dessus, mais commencez par demander à votre chien de s'asseoir.<br><br>"
+    ]]>
+</string>
+
+    <string name="des_3">
+    <![CDATA[
+        <b>Enseignez à votre chien à se coucher en six étapes faciles</b><br>
+        "1. Avec votre chien en position assise et une friandise dans votre main, déplacez votre main du nez de votre chien vers sa poitrine, puis directement vers le sol.<br><br>" 
+        "2. Votre chien devrait suivre la friandise en adoptant une position couchée. Félicitez-le et récompensez-le immédiatement avec la friandise.<br><br>" 
+        "3. Pratiquez cela plusieurs fois lors de sessions courtes mais régulières.<br><br>" 
+        "4. Lorsque votre chien suit facilement la friandise en position couchée, vous pouvez commencer à dire le mot 'couché' au moment même où votre chien adopte la position couchée.<br><br>" 
+        "5. Pratiquez cela plusieurs fois lors de sessions courtes mais régulières.<br><br>" 
+        "6. Pendant que votre chien est couché, donnez-lui des friandises - cela augmentera le temps qu'il passe couché.<br><br>"
+    ]]>
+</string>
+
+    <string name="des_4">
+    <![CDATA[
+        <b>Toilettage régulier et vérifications de santé</b><br><br>
+        "Les chats apprécient un toilettage régulier, ce qui maintient leur pelage en bon état. Toiletter votre chat chaque jour est un excellent moyen de remarquer des changements dans sa santé. N'oubliez pas :<br><br>" 
+        "<b>Repérez tôt les problèmes de santé</b> en vérifiant les signes de blessures ou de maladies - et n'oubliez pas, les chats ont un seuil de douleur similaire à celui des personnes.<br><br>" 
+        "<b>Soyez attentif aux changements de comportement</b> - les chats stressés ou peu sûrs d'eux peuvent devenir malades, et des changements dans leur comportement peuvent être un signe précoce qu'il se passe quelque chose.<br><br>" 
+        "<b>Les changements ne sont pas toujours évidents,</b> car les chats peuvent avoir différentes façons de montrer qu'ils sont contrariés ou douloureux.<br><br>" 
+        "<b>Faites-le vérifier</b> - si vous remarquez quelque chose d'inhabituel, y compris des changements de comportement ou d'habitudes de toilettage, emmenez votre chat chez le vétérinaire dès que possible.<br><br>" 
+        "<b>N'utilisez que les médicaments prescrits par votre vétérinaire</b> - les médicaments pour humains et chiens peuvent être très dangereux pour les chats.<br><br>" 
+        "<b>Faites vacciner et pucer votre chat</b><br>" 
+        "Même si tout semble bien, il est toujours conseillé d'emmener votre chat chez le vétérinaire pour un bilan de santé annuel. Cela garantira également que votre chat est à jour pour ses vaccinations, traitements contre les puces et vermifuges.<br><br>" 
+        "Parlez à votre vétérinaire de la possibilité de faire pucer votre chat s'il ne l'est pas déjà. Les accidents de la route sont la cause la plus courante de blessures ou de décès précoce chez les chats, mais les chats pucés ont plus de chances d'être réunis avec leurs propriétaires et de recevoir les soins nécessaires s'ils sont blessés.<br><br>" 
+        "<b>Faites stériliser votre chat</b><br>" 
+        "Pour éviter des portées de chatons non désirées, il est également conseillé de faire stériliser ou castrer votre chat. Cette opération simple est réalisée par un vétérinaire et, pour les chats femelles, elle devrait être effectuée avant l'âge de quatre mois.<br><br>" 
+        "Pour les chats mâles, la castration (ou 'la coupe') les empêchera de se battre avec d'autres chats, réduisant ainsi le risque de blessures ou de maladies. Cela peut également les empêcher de marquer leur territoire en urinant dans la maison.<br><br>" 
+        "<b>Souscrivez une assurance pour animaux de compagnie</b><br>" 
+        "Les factures vétérinaires peuvent être coûteuses, il est donc conseillé de souscrire une assurance pour animaux de compagnie pour vous protéger contre d'éventuelles surprises désagréables. Les packages de soins de santé pour animaux de compagnie peuvent également vous aider à gérer les coûts vétérinaires. De nombreux vétérinaires proposent ces services, notamment Medivet, CVS UK Ltd veterinary group practices et Companion Care/Vets4Pets. Trouvez votre vétérinaire local pour discuter de leur programme de soins de santé.<br><br>"
+    ]]>
+</string>
+
+
+    <string name="des_5">
+    <![CDATA[
+        <b>Faire stériliser votre chatte</b><br><br>
+        "Pour empêcher votre chatte d'avoir des chatons, elle devra subir une opération simple appelée 'stérilisation' avant l'âge de quatre mois. Cela est également connu sous le nom de 'fixation', 'castration' ou 'être opérée'.<br><br>" 
+        "Lorsque votre chat atteint environ quatre mois, elle commencera à attirer l'attention de chats mâles qui voudront s'accoupler avec elle. C'est pourquoi il est important de la faire stériliser avant qu'elle n'atteigne quatre mois, afin qu'elle ne tombe pas enceinte alors qu'elle est encore un chaton.<br><br>" 
+        "Vous avez peut-être entendu dire qu'il est bon pour les chattes d'avoir une portée de chatons avant d'être stérilisées, mais ce n'est pas vrai. Une fois qu'elle a été stérilisée, votre chaton pourra faire tout ce que les chats aiment faire, comme sortir, grimper aux arbres et jouer.<br><br>" 
+        "<b>Faire 'la coupe' de votre chat mâle</b><br>" 
+        "Si vous avez un chat mâle, il devra subir une opération simple appelée 'la coupe'. Cela peut l'empêcher de marquer son territoire en urinant dans votre maison, ce qui peut être très malodorant, et de subir des blessures graves lors de combats. Il est également moins susceptible de s'éloigner et de se faire écraser, car les chats qui ont subi 'la coupe' ont tendance à rester plus proches de chez eux.<br><br>" 
+        "De plus, 'la coupe' de votre chat le protégera contre une maladie désagréable appelée FIV, qui est la version féline du VIH. Elle se propage par des morsures de chat, souvent entre mâles se disputant une femelle. Elle ne peut pas être attrapée par les humains.<br><br>" 
+        "<b>Ce qui est impliqué dans l'opération de castration ?</b><br>" 
+        "Votre chat devra être déposé chez le vétérinaire et récupéré plus tard dans la même journée.<br><br>" 
+        "L'opération est très simple et votre chat recevra une anesthésie. Une fois de retour à la maison, il devra rester à l'intérieur pendant un court laps de temps (votre vétérinaire vous<br><br>"
+    ]]>
+</string>
+    <string name="title_daily_notification">Multilingual Pet Conversations</string>
+    <string name="content_daily_notification">Our app is tailored to decipher the distinct languages of dogs, cats, and hamsters. From the playful barks of dogs to the subtle purrs of cats and the tiny squeaks of hamsters, you\'ll finally understand what your pets are saying.</string>
+
+</resources>

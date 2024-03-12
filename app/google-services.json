@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "132669975727",
+    "project_id": "dogandcattranslatorplank",
+    "storage_bucket": "dogandcattranslatorplank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132669975727:android:3f7b5347c029efd357385a",
+        "android_client_info": {
+          "package_name": "com.wa.dog.cat.sound.prank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRa5kF1ybi-huxxDHwQlqNhYioTnt5Gzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

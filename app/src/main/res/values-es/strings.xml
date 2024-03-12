@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dog &amp; Cat Translator Prank</string>
+    <string name="animal_translator">Traductor de Animales</string>
+    <string name="let_play">¡Vamos a Jugar!</string>
+    <string name="sound">Sonido</string>
+    <string name="translator">Traductor</string>
+    <string name="training">Entrenamiento</string>
+    <string name="whistle">Silbato</string>
+    <string name="tap_to_record">Toca para grabar</string>
+    <string name="processing">Procesando</string>
+    <string name="your_result">Tu Resultado</string>
+    <string name="back_to_translating">Volver a Traducir</string>
+    <string name="lets_play">¡Vamos a Jugar!</string>
+    <string name="install">Instalar</string>
+    <string name="this_action_can_contain_ads">Esta acción puede contener anuncios…</string>
+    <string name="get_started">Empezar</string>
+    <string name="next">Siguiente</string>
+    <string name="skip">Omitir</string>
+    <string name="language">Idioma</string>
+    <string name="intro_1">Descubre nuestra función de Traductor de Animales, donde se hace realidad el sueño de cada dueño de mascotas. Graba los sonidos únicos de tu mascota, y la tecnología impulsada por inteligencia artificial de nuestra aplicación te proporcionará una traducción caprichosa. ¡Es una forma divertida y encantadora de adivinar lo que tus amigos peludos podrían estar diciendo! Recuerda divertirte y conectar más profundamente con tus compañeros animales a través de la alegría de la conversación. 🐶🐱🐹</string>
+    <string name="intro_2">¿Alguna vez has tenido curiosidad por el estado de ánimo de tu mascota? Con nuestro Traductor de Humor para Mascotas, simplemente graba sus sonidos y nuestra aplicación traduce esos ladridos y maullidos en emociones, permitiéndote saber si tu amigo peludo está alegre, hambriento o necesita amor. ¡Conéctate a un nivel de corazón a corazón con tus compañeros animales! 🐾❤️</string>
+    <string name="intro_3">¡Libera el potencial de tu mascota con nuestra función de Asistente de Entrenamiento para Mascotas! Ejercicios de entrenamiento adaptados, consejos de refuerzo positivo y rutinas personalizables te guían para enseñar a tus amigos peludos nuevos trucos y buenos hábitos. Vincúlate, entrena y diviértete mientras tú y tu mascota crecen juntos. 🐕🎾📚</string>
+    <string name="with_your_pet">con tu mascota ¡</string>
+    <string name="cat">Gato</string>
+    <string name="dog">Perro</string>
+    <string name="s_angry">Enojado</string>
+    <string name="s_enjoyed">Disfrutado</string>
+    <string name="s_sad">Triste</string>
+    <string name="s_happy">Feliz</string>
+    <string name="s_cutie">Cariño</string>
+    <string name="s_sileneed">Silencioso</string>
+    <string name="s_elated">Eufórico</string>
+    <string name="s_tired">Cansado</string>
+    <string name="s_excited">Emocionado</string>
+    <string name="s_relaxed">Relajado</string>
+    <string name="hamster">Hámster</string>
+    <string name="permission_record">La aplicación necesita permiso de grabación para realizar esta función</string>
+    <string name="translation_is_in_progress_n_please_wait_a_moment">La traducción está en progreso, \n Por favor, espera un momento…</string>
+    <string name="check_my_result">Verificar Mi Resultado</string>
+    <string name="train_your_pet">Entrenar a Tu Mascota</string>
+    <string name="pet_sounds">Sonidos de la Mascota</string>
+    <string name="how_to_train_a_dog_to_sit">¿Cómo entrenar a un perro para sentarse?</string>
+    <string name="how_to_train_a_dog_to_stay">¿Cómo entrenar a un perro para quedarse quieto?</string>
+    <string name="how_to_train_your_dog_to_lie_down">¿Cómo entrenar a tu perro para acostarse?</string>
+    <string name="how_to_keep_your_cat_healthy_and_happy">¿Cómo mantener a tu gato saludable y feliz?</string>
+    <string name="should_i_spay_or_neuter_my_cat">¿Debería esterilizar o castrar a mi gato?</string>
+
+    <string name="des_1">
+    <![CDATA[
+        <b>Enseña a tu perro a sentarse en seis simples pasos</b><br><br>
+        "1. Con tu perro de pie, sostén una golosina apetitosa cerca de su nariz.<br><br>" 
+        "2. Mantén la golosina cerca de la nariz de tu perro, mueve tu mano en un arco sobre su cabeza. A medida que el perro levanta la cabeza para seguir la golosina, su trasero se irá al suelo. En el momento en que se siente, alábalo y dale la golosina.<br><br>" 
+        "3. Practica esto varias veces en sesiones cortas pero regulares.<br><br>" 
+        "4. Como tu perro siempre recibe una golosina por sentarse, pronto descubrirás que se sienta por más tiempo. Ahora puedes agregar la palabra clave 'sentado' cuando él vaya a sentarse. Ten cuidado de no decirlo antes de que tu perro se mueva a la posición correcta, o podría asociarlo con el movimiento incorrecto.<br><br>" 
+        "5. Practica esto varias veces en sesiones cortas pero regulares.<br><br>" 
+        "6. Da una señal de \'ok\' para indicarle a tu perro cuándo ha terminado su entrenamiento.<br><br>"
+    ]]>
+</string>
+
+
+    <string name="des_2">
+    <![CDATA[
+        <b>Guía de seis pasos para enseñar a un perro a quedarse</b><br><br>
+        "1. Pídele a tu perro que se acueste.<br><br>" 
+        "2. Dale a tu perro una señal con la mano, por ejemplo, un letrero de alto con la palma de tu mano frente a tu perro.<br><br>" 
+        "3. En lugar de darle a tu perro la golosina de inmediato, espera unos segundos. Di 'quieto' y luego dásela. Es importante recompensar a tu perro mientras todavía está acostado, y no si se ha levantado.<br><br>" 
+        "4. Practica esto muchas veces en sesiones cortas pero regulares, aumentando gradualmente el tiempo que tu perro permanece en la posición de acostado.<br><br>" 
+        "5. Luego, puedes comenzar a aumentar la distancia entre tú y tu perro. Comienza tomando solo un paso hacia atrás antes de darle la recompensa, y luego aumenta la distancia lentamente y gradualmente.<br><br>" 
+        "6. Practica en muchos lugares diferentes, alrededor de la casa, en el jardín, en la casa de un amigo y en el parque local.<br><br>" 
+        "<b>Consejos adicionales</b>\n" 
+        "1. Es importante extender gradualmente el tiempo que deseas que tu perro se quede. Practica regularmente y aumenta el tiempo unos segundos cada vez.<br><br>" 
+        "2. Estate atento a las señales de que tu perro va a romper el 'quieto' y recompénsalo antes de que lo haga, haz que gane en lugar de fallar.<br><br>" 
+        "3. También puedes enseñarle a tu perro a quedarse en una posición de sentado.<br><br>"
+    ]]>
+</string>
+
+    <string name="des_3">
+    <![CDATA[
+        <b>Enseña a tu perro a acostarse en seis sencillos pasos</b><br><br>
+        "1. Con tu perro en posición de sentado y una golosina en tu mano, mueve tu mano desde la nariz de tu perro hacia su pecho y luego recto hacia abajo hacia el suelo.<br><br>" 
+        "2. Tu perro debería seguir la golosina hacia una posición de acostado. Alábalo y recompénsalo con la golosina de inmediato.<br><br>" 
+        "3. Practica esto varias veces en sesiones cortas pero regulares.<br><br>" 
+        "4. Cuando tu perro siga fácilmente la golosina hacia una posición de acostado, puedes comenzar a decir la palabra 'abajo' justo cuando tu perro esté bajando.<br><br>" 
+        "5. Practica esto varias veces en sesiones cortas pero regulares.<br><br>" 
+        "6. Mientras tu perro esté acostado, dale golosinas; esto aumentará el tiempo que pasa acostado.<br><br>"
+    ]]>
+</string>
+
+
+    <string name="des_4">
+    <![CDATA[
+        <b>Aseo regular y revisiones de salud</b><br><br>
+        "A los gatos les gusta el aseo regular, lo que mantiene su pelaje en buenas condiciones. Asear a tu gato todos los días es una excelente manera de notar cambios en su salud. Recuerda:<br><br>" 
+        "<b>Detecta problemas de salud temprano</b> revisando signos de lesiones o enfermedades, y no olvides que los gatos tienen un umbral de dolor similar al de las personas.<br><br>" 
+        "<b>Está atento a cambios de comportamiento</b> - los gatos estresados o inseguros pueden enfermarse, y los cambios en su comportamiento pueden ser un signo temprano de que algo no está bien.<br><br>" 
+        "<b>Los cambios no siempre son evidentes,</b> ya que los gatos pueden tener diferentes formas de mostrar que están molestos o con dolor.<br><br>" 
+        "<b>Haz que lo revisen</b> - si notas algo inusual, incluidos cambios en el comportamiento o hábitos de aseo, lleva a tu gato al veterinario lo antes posible.<br><br>" 
+        "<b>Usa solo medicamentos recetados por tu veterinario</b> - los medicamentos para humanos y perros pueden ser muy peligrosos para los gatos.<br><br>" 
+        "<b>Vacuna y coloca un microchip a tu gato</b>\n" 
+        "Incluso si todo parece estar bien, aún es una buena idea llevar a tu gato al veterinario para un chequeo de salud anual. Esto también asegurará que tu gato esté al día con sus vacunas, tratamientos contra pulgas y desparasitantes.<br><br>" 
+        "Habla con tu veterinario sobre colocarle un microchip a tu gato si aún no lo tiene. Los accidentes de tráfico son la causa más común de lesiones o muerte temprana en los gatos, pero los gatos con microchip tienen más probabilidades de reunirse con sus dueños y recibir la atención que necesitan si están heridos.<br><br>" 
+        "<b>Estériliza a tu gato</b>\n" 
+        "Para evitar gatitos inesperados, también es buena idea esterilizar a tu gato. Esta sencilla operación la realiza un veterinario y, para las gatas, debe hacerse antes de que cumplan cuatro meses.<br><br>" 
+        "Para los gatos machos, la esterilización (o la operación) evitará que peleen con otros gatos, por lo que es menos probable que resulten heridos o contraigan enfermedades. También puede evitar que marquen territorio dentro de la casa.<br><br>" 
+        "<b>Contrata un seguro para mascotas</b>\n" 
+        "Las facturas del veterinario pueden ser costosas, así que es una buena idea contratar un seguro para mascotas para evitar sorpresas desagradables. Los paquetes de atención médica para mascotas también pueden ayudarte a gestionar los costos veterinarios. Muchos veterinarios ofrecen estos servicios, incluidos Medivet, CVS UK Ltd group practices y Companion Care/Vets4Pets. Encuentra a tu veterinario local para hablar sobre su esquema de atención médica.<br><br>"
+    ]]>
+</string>
+
+    <string name="des_5">
+    <![CDATA[
+        <b>Estérilización de tu gata</b><br><br>
+        "Para evitar que tu gata tenga gatitos, necesitará someterse a una sencilla operación conocida como esterilización antes de cumplir cuatro meses. También se conoce como fijación, castración o hacerlo.<br><br>" 
+        "Cuando tu gata tenga aproximadamente cuatro meses, comenzará a atraer la atención de gatos machos que querrán aparearse con ella. Por eso es importante esterilizarla antes de que cumpla cuatro meses, para que no quede embarazada mientras aún es una gatita.<br><br>" 
+        "Puede que hayas oído decir que es bueno que las gatas tengan una camada de gatitos antes de ser esterilizadas, pero esto no es cierto. Una vez que ha sido esterilizada, tu gata podrá hacer todas las cosas que disfrutan los gatos, como salir al aire libre, trepar árboles y jugar.<br><br>" 
+        "<b>Operación para esterilizar a tu gato macho</b>\n" 
+        "Si tienes un gato macho, necesitará someterse a una sencilla operación llamada la operación. Esto puede evitar que rocíe en tu casa para marcar su territorio, lo que puede ser muy maloliente, y evitar lesiones desagradables en peleas. También es menos probable que se aleje y sea atropellado, ya que los gatos que han sido operados tienden a quedarse más cerca de casa.<br><br>" 
+        "Además, hacer que tu gato sea operado lo protegerá de una enfermedad desagradable llamada FIV, que es la versión felina del VIH. Se transmite a través de mordeduras de gatos, a menudo entre machos que pelean por una hembra. No se puede contagiar a las personas.<br><br>" 
+        "<b>¿Qué implica la operación de esterilización?</b>\n" 
+        "Tu gato tendrá que ser llevado al veterinario y recogido más tarde el mismo día.<br><br>" 
+        "La operación es muy sencilla y a tu gato se le administrará anestesia. Una vez que estén de vuelta en casa, tendrán que quedarse adentro por un corto tiempo (tu veterinario te dirá cuánto tiempo), pero pronto estarán en forma y saludables nuevamente.<br><br>"
+    ]]>
+</string>
+    <string name="title_daily_notification">Multilingual Pet Conversations</string>
+    <string name="content_daily_notification">Our app is tailored to decipher the distinct languages of dogs, cats, and hamsters. From the playful barks of dogs to the subtle purrs of cats and the tiny squeaks of hamsters, you\'ll finally understand what your pets are saying.</string>
+
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dog &amp; Cat Translator Prank</string>
+    <string name="animal_translator">Tradutor de Animais</string>
+    <string name="let_play">Vamos Brincar</string>
+    <string name="sound">Som</string>
+    <string name="translator">Tradutor</string>
+    <string name="training">Treinamento</string>
+    <string name="whistle">Assobio</string>
+    <string name="tap_to_record">Toque para gravar</string>
+    <string name="processing">Processando</string>
+    <string name="your_result">Seu Resultado</string>
+    <string name="back_to_translating">Voltar para Tradução</string>
+    <string name="lets_play">Vamos Brincar</string>
+    <string name="install">Instalar</string>
+    <string name="this_action_can_contain_ads">Esta ação pode conter anúncios…</string>
+    <string name="get_started">Começar</string>
+    <string name="next">Próximo</string>
+    <string name="skip">Pular</string>
+    <string name="language">Idioma</string>
+    <string name="intro_1">Descubra nossa funcionalidade de Tradutor de Animais, onde o sonho de todo dono de animal de estimação se torna realidade. Grave os sons únicos do seu animal de estimação, e a tecnologia alimentada por IA do nosso aplicativo fornece uma tradução divertida. É uma maneira divertida e encantadora de adivinhar o que seus amigos peludos podem estar dizendo! Lembre-se de se divertir e se conectar mais profundamente com seus companheiros animais através da alegria da conversa. 🐶🐱🐹</string>
+    <string name="intro_2">Sempre curioso sobre o humor do seu animal de estimação? Com o nosso Tradutor de Humor Pet, basta gravar os sons deles e nosso aplicativo traduz esses latidos e ronronados em emoções, informando se seu amigo peludo está alegre, com fome ou precisa de amor. Conecte-se em um nível de coração para coração com seus companheiros de estimação! 🐾❤️</string>
+    <string name="intro_3">Liberte o potencial do seu animal de estimação com nossa funcionalidade de Assistente de Treinamento de Animais! Exercícios de treinamento personalizados, dicas de reforço positivo e rotinas personalizáveis guiam você no ensino de novos truques e bons hábitos aos seus amigos peludos. Vincule-se, treine e divirta-se enquanto você e seu animal de estimação crescem juntos! 🐕🎾📚</string>
+    <string name="with_your_pet">com seu animal de estimação!</string>
+    <string name="cat">Gato</string>
+    <string name="dog">Cão</string>
+    <string name="s_angry">Zangado</string>
+    <string name="s_enjoyed">Aproveitando</string>
+    <string name="s_sad">Triste</string>
+    <string name="s_happy">Feliz</string>
+    <string name="s_cutie">Fofinho</string>
+    <string name="s_sileneed">Silencioso</string>
+    <string name="s_elated">Radiante</string>
+    <string name="s_tired">Cansado</string>
+    <string name="s_excited">Animado</string>
+    <string name="s_relaxed">Relaxado</string>
+    <string name="hamster">Hamster</string>
+    <string name="permission_record">O aplicativo precisa de permissão para gravar para executar esta função</string>
+    <string name="translation_is_in_progress_n_please_wait_a_moment">A tradução está em andamento, \n Por favor, aguarde um momento…</string>
+    <string name="check_my_result">Verificar Meu Resultado</string>
+    <string name="train_your_pet">Treine Seu Animal de Estimação</string>
+    <string name="pet_sounds">Sons do Animal de Estimação</string>
+    <string name="how_to_train_a_dog_to_sit">Como treinar um cachorro para sentar?</string>
+    <string name="how_to_train_a_dog_to_stay">Como treinar um cachorro para ficar?</string>
+    <string name="how_to_train_your_dog_to_lie_down">Como treinar seu cachorro para deitar?</string>
+    <string name="how_to_keep_your_cat_healthy_and_happy">Como manter seu gato saudável e feliz?</string>
+    <string name="should_i_spay_or_neuter_my_cat">Devo castrar meu gato?</string>
+
+    <string name="des_1">
+        <![CDATA[<b>Ensine seu cachorro a sentar em seis passos fáceis</b><br>
+    1. Com seu cachorro em posição de pé, segure um petisco saboroso perto do nariz dele.<br><br>
+    2. Mantendo o petisco perto do nariz do seu cachorro, mova sua mão em um arco sobre a cabeça dele. Conforme o cachorro levanta a cabeça para seguir o petisco, o traseiro dele vai para o chão. No momento em que ele se sentar, elogie-o e dê a ele o petisco.<br><br>
+    3. Pratique isso várias vezes em sessões curtas, mas regulares.<br><br>
+    4. Como seu cachorro sempre ganha um petisco por sentar, logo você verá que ele se senta por mais tempo. Agora você pode adicionar a palavra de comando \'sentar\' enquanto ele se prepara para sentar. Cuidado para não dizer antes de seu cachorro se mover para a posição, ou ele pode associá-la ao movimento errado.<br><br>
+    5. Pratique isso várias vezes em sessões curtas, mas regulares.<br><br>
+    6. Dê um sinal \'ok\' para informar ao seu cachorro quando o treinamento dele terminou.<br><br>
+     ]]></string>
+
+    <string name="des_2"><![CDATA[<b>Um guia em seis passos para ensinar um cachorro a ficar</b><br>
+    "1. Peça ao seu cachorro para deitar.<br><br>
+    "2. Dê um sinal com a mão ao seu cachorro - por exemplo, um sinal de \'pare\' com a palma da sua mão voltada para o seu cachorro.<br><br>
+    "3. Em vez de dar a recompensa imediatamente, espere alguns segundos. Diga \'fique\' e então dê a eles. É importante recompensar seu cachorro enquanto eles ainda estão deitados e não se tiverem levantado.<br><br>
+    "4. Pratique isso muitas vezes em sessões curtas, mas regulares, aumentando gradualmente o tempo que seu cachorro permanece na posição deitada.<br><br>
+    "5. Em seguida, você pode começar a aumentar a distância entre você e seu cachorro. Comece dando apenas um passo para trás antes de dar a recompensa e, aos poucos, aumente a distância.<br><br>
+    "6. Pratique em muitos lugares diferentes - pela casa, no jardim, na casa de um amigo e no parque local.<br><br>" 
+    "<b>Dicas adicionais</b><br>" 
+    "1. É importante estender gradualmente o tempo que você deseja que seu cachorro fique. Pratique regularmente e aumente o tempo por alguns segundos a cada vez.<br><br>
+    "2. Fique atento aos sinais de que seu cachorro vai quebrar o \'fique\' e recompense-o antes que ele o faça - prepare-o para vencer em vez de falhar.<br><br>
+    "3. Você também pode ensinar seu cachorro a ficar na posição de \'sentar\'. Siga as etapas acima, mas comece pedindo ao seu cachorro para sentar. ]]></string>
+
+    <string name="des_3"><![CDATA[<b>Ensine seu cachorro a deitar em seis passos fáceis</b><br>
+    1. Com seu cachorro em uma posição sentada e um petisco em sua mão, mova sua mão do nariz do seu cachorro em direção ao peito, depois reta em direção ao chão.<br><br>
+    2. Seu cachorro deve seguir o petisco para uma posição deitada. Elogie e recompense imediatamente com o petisco.<br><br>
+    3. Pratique isso várias vezes em sessões curtas, mas regulares.<br><br>
+    4. Quando seu cachorro estiver seguindo facilmente o petisco para a posição deitada, você pode começar a dizer a palavra \'deite\' assim que seu cachorro estiver entrando na posição deitada.<br><br>
+    5. Pratique isso várias vezes em sessões curtas, mas regulares.<br><br>
+    6. Enquanto seu cachorro estiver deitado, dê a ele petiscos - isso aumentará o tempo que ele passa deitado.<br><br>
+    ]]></string>
+    <string name="des_4"><![CDATA[<b>Cuidados regulares e verificações de saúde</b><br><br>" 
+    Gatos apreciam cuidados regulares, que mantêm a pelagem deles em boa condição. Cuidar do seu gato todos os dias é uma ótima maneira de notar mudanças na saúde deles. Lembre-se: <br><br>" 
+    <b>Identifique problemas de saúde precocemente</b> ao procurar sinais de lesões ou doenças - e não se esqueça, os gatos têm um limiar de dor semelhante ao das pessoas.<br><br>" 
+    <b>Fique atento a mudanças de comportamento</b> - gatos estressados ou inseguros podem ficar doentes, e alterações no comportamento podem ser um sinal precoce de que algo está errado.<br><br>" 
+    <b>Mudanças nem sempre são óbvias,</b> pois os gatos podem ter maneiras diferentes de mostrar que estão chateados ou com dor.<br><br>" 
+    <b>Consulte um veterinário</b> - se você notar algo incomum, incluindo mudanças no comportamento ou hábitos de cuidado, leve seu gato ao veterinário o mais rápido possível. <br><br>" 
+    <b>Use apenas medicamentos prescritos pelo veterinário</b> - medicamentos para humanos e cachorros podem ser muito perigosos para os gatos.<br><br>" 
+    <b>Vacine e coloque microchip no seu gato</b> <br>
+    Mesmo que tudo pareça bem, ainda é uma boa ideia levar seu gato ao veterinário para uma revisão anual de saúde. Isso também garantirá que seu gato esteja atualizado com suas vacinas, tratamentos contra pulgas e vermífugos.<br><br>
+    Converse com seu veterinário sobre colocar um microchip no seu gato se ele ainda não tiver. Acidentes de trânsito são a causa mais comum de lesões ou morte prematura em gatos, mas gatos com microchip têm mais chances de se reunir com seus donos e receberem os cuidados necessários se estiverem feridos. <br><br>
+    <b>Castrar seu gato</b> <br>
+    Para evitar ninhadas inesperadas, também é uma boa ideia castrar seu gato. Essa operação simples é realizada por um veterinário e, para gatas, deve ser feita antes que atinjam quatro meses. <br><br>
+    Para gatos machos, a castração (ou \'o corte\') os impedirá de brigar com outros gatos, tornando-os menos propensos a se machucarem ou pegarem doenças. Também pode impedi-los de urinar em casa. <br><br>
+    <b>Contrate um seguro para animais de estimação</b> <br>
+    Contas de veterinário podem ser caras, então é uma boa ideia contratar um seguro para animais de estimação para evitar surpresas desagradáveis. Pacotes de cuidados de saúde para animais de estimação podem ajudar a gerenciar os custos veterinários também. Muitos veterinários oferecem esses serviços, incluindo as práticas de grupo veterinário Medivet, CVS UK Ltd e Companion Care/Vets4Pets. Encontre um veterinário local para discutir o esquema de cuidados de saúde deles.<br><br>
+    ]]></string>
+    <string name="des_5"><![CDATA[<b>Castração da sua gata</b><br><br>
+    Para impedir que sua gata tenha filhotes, ela precisará passar por uma operação simples conhecida como \'castração\' antes de completar quatro meses de idade. Isso também é conhecido como \'esterilização\', \'neutering\' ou \'sendo feito\'. <br><br>
+    Quando sua gata estiver com cerca de quatro meses, ela começará a atrair a atenção de gatos machos, que desejarão acasalar com ela. É por isso que é importante castrá-la antes de atingir quatro meses, para que ela não fique grávida enquanto ainda é uma gatinha.<br><br>
+    Você pode ter ouvido dizer que é bom para as gatas terem uma ninhada de filhotes antes de serem castradas, mas isso não é verdade. Depois de ser castrada, sua gatinha poderá fazer todas as coisas que os gatos gostam, como sair ao ar livre, subir em árvores e brincar. <br><br>
+    <b>Castrando seu gato macho</b><br>
+    Se você tem um gato macho, ele precisará passar por uma operação simples chamada \'o corte\'. Isso pode impedi-lo de urinar em casa para marcar território, o que pode ser muito cheiroso, e de sofrer lesões graves em brigas. Ele também terá menos probabilidade de se afastar e ser atropelado, pois os gatos castrados tendem a ficar mais perto de casa. <br><br>
+    Além disso, castrar seu gato o protegerá de uma doença desagradável chamada FIV, que é a versão felina do HIV. Ela é transmitida por mordidas de gato, muitas vezes entre machos lutando por uma fêmea. Não pode ser transmitida para pessoas. <br><br>
+    <b>O que está envolvido na operação de castração?</b><br>
+    Sua gata precisará ser deixada na clínica veterinária e depois buscada ainda no mesmo dia. <br><br>
+    A operação é muito simples e sua gata receberá uma anestesia. Uma vez de volta em casa, ela precisará ficar dentro de casa por um curto período (seu veterinário informará por quanto tempo), mas logo estará saudável novamente. <br><br>
+    ]]></string>
+
+    <string name="title_daily_notification">Multilingual Pet Conversations</string>
+    <string name="content_daily_notification">Our app is tailored to decipher the distinct languages of dogs, cats, and hamsters. From the playful barks of dogs to the subtle purrs of cats and the tiny squeaks of hamsters, you\'ll finally understand what your pets are saying.</string>
+
+
+
+</resources>

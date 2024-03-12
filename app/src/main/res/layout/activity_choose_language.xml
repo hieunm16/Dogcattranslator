@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_28sdp"
+        >
+
+        <ImageView
+            android:id="@+id/imBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@drawable/custom_ripple_image"
+            android:padding="10dp"
+            android:src="@drawable/ic_back"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitleSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/manrope_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/language"
+            android:textColor="#3F46C4"
+            android:textSize="@dimen/_16sdp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/imBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imBack" />
+
+        <TextView
+            android:id="@+id/tvTitleSplash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:fontFamily="@font/manrope_bold"
+            android:gravity="start|center_vertical"
+            android:includeFontPadding="false"
+            android:text="@string/language"
+            android:textColor="#3F46C4"
+            android:textSize="@dimen/_16ssp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/imgChooseLang"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imgChooseLang" />
+        <ImageView
+            android:id="@+id/imgChooseLang"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@drawable/custom_ripple_image"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_choose_lang"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_lang"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingBottom="12dp"
+            android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/rl_native"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleSetting"
+            tools:listitem="@layout/item_multi_lang" />
+
+        <RelativeLayout
+            android:id="@+id/rl_native"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintTop_toBottomOf="@+id/rv_lang"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_goneMarginTop="@dimen/_4sdp">
+
+            <FrameLayout
+                android:id="@+id/fr_native_ads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/ads_native_shimmer" />
+            </FrameLayout>
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

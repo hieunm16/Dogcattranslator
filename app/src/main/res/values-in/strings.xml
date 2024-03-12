@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dog &amp; Cat Translator Prank</string>
+    <string name="animal_translator">Penerjemah Hewan</string>
+    <string name="let_play">Ayo Bermain</string>
+    <string name="sound">Suara</string>
+    <string name="translator">Penerjemah</string>
+    <string name="training">Pelatihan</string>
+    <string name="whistle">Peluit</string>
+    <string name="tap_to_record">Ketuk untuk merekam</string>
+    <string name="processing">Memproses</string>
+    <string name="your_result">Hasil Anda</string>
+    <string name="back_to_translating">Kembali ke Penerjemahan</string>
+    <string name="lets_play">Ayo Bermain</string>
+    <string name="install">Install</string>
+    <string name="this_action_can_contain_ads">tindakan ini dapat mengandung iklan…</string>
+    <string name="get_started">Mulai</string>
+    <string name="next">Berikutnya</string>
+    <string name="skip">Lewati</string>
+    <string name="language">Bahasa</string>
+    <string name="intro_1">Temukan fitur Penerjemah Hewan kami, di mana impian setiap pemilik hewan peliharaan menjadi kenyataan. Rekam suara unik hewan peliharaan Anda, dan teknologi AI dalam aplikasi kami menyediakan terjemahan yang lucu. Ini adalah cara yang menyenangkan dan menyenangkan untuk menebak apa yang mungkin dikatakan oleh teman berbulu Anda! Ingatlah untuk bersenang-senang dan terhubung lebih dalam dengan teman hewan Anda melalui kegembiraan berbicara. 🐶🐱🐹</string>
+    <string name="intro_2">Pernah penasaran tentang suasana hati hewan peliharaan Anda? Dengan Penerjemah Mood Pet kami, cukup rekam suara mereka dan aplikasi kami akan menerjemahkan gonggongan dan dengkuran itu menjadi emosi, memberi tahu Anda apakah teman berbulu Anda bahagia, lapar, atau membutuhkan sedikit cinta. Terhubunglah secara langsung dengan teman hewan peliharaan Anda! 🐾❤️</string>
+    <string name="intro_3">Tuntaskan potensi hewan peliharaan Anda dengan fitur Asisten Pelatihan Hewan kami! Latihan yang disesuaikan, tips penguatan positif, dan rutinitas yang dapat disesuaikan akan membimbing Anda dalam mengajarkan trik dan kebiasaan baik baru kepada teman berbulu Anda. Ikuti, latih, dan bersenang-senanglah saat Anda dan hewan peliharaan Anda tumbuh bersama! 🐕🎾📚</string>
+    <string name="with_your_pet">dengan hewan peliharaan Anda!</string>
+    <string name="cat">Kucing</string>
+    <string name="dog">Anjing</string>
+    <string name="s_angry">Marah</string>
+    <string name="s_enjoyed">Menikmati</string>
+    <string name="s_sad">Sedih</string>
+    <string name="s_happy">Bahagia</string>
+    <string name="s_cutie">Lucu</string>
+    <string name="s_sileneed">Tenang</string>
+    <string name="s_elated">Gembira</string>
+    <string name="s_tired">Capek</string>
+    <string name="s_excited">Bersemangat</string>
+    <string name="s_relaxed">Rileks</string>
+    <string name="hamster">Hamster</string>
+    <string name="permission_record">Aplikasi memerlukan izin perekaman untuk menjalankan fungsi ini</string>
+    <string name="translation_is_in_progress_n_please_wait_a_moment">Terjemahan sedang berlangsung, \n Harap tunggu sebentar…</string>
+    <string name="check_my_result">Periksa Hasil Saya</string>
+    <string name="train_your_pet">Latih Hewan Peliharaan Anda</string>
+    <string name="pet_sounds">Suara Hewan Peliharaan</string>
+    <string name="how_to_train_a_dog_to_sit">Bagaimana cara melatih anjing untuk duduk?</string>
+    <string name="how_to_train_a_dog_to_stay">Bagaimana cara melatih anjing untuk tetap?</string>
+    <string name="how_to_train_your_dog_to_lie_down">Bagaimana cara melatih anjing Anda untuk berbaring?</string>
+    <string name="how_to_keep_your_cat_healthy_and_happy">Bagaimana cara menjaga kesehatan dan kebahagiaan kucing Anda?</string>
+    <string name="should_i_spay_or_neuter_my_cat">Haruskah saya melakukan penyuntikan atau pembiakan pada kucing saya?</string>
+    
+    <string name="des_1">
+        <![CDATA[
+        <b>Ajarkan anjing Anda duduk dalam enam langkah mudah</b><br>
+"1. Dengan anjing Anda dalam posisi berdiri, pegang camilan lezat di dekat hidungnya.<br><br>
+"2. Dengan camilan tetap di dekat hidung anjing Anda, gerakkan tangan Anda melingkar di atas kepala anjing. Saat anjing mengangkat kepalanya untuk mengikuti camilan, bagian bawahnya akan menyentuh lantai. Saat dia duduk, puji dia dan berikan camilan.<br><br>
+"3. Latih ini beberapa kali dalam sesi singkat tapi teratur.<br><br> 
+"4. Karena anjing Anda selalu mendapatkan camilan saat duduk, Anda akan segera menemukan bahwa dia duduk lebih lama. Sekarang Anda dapat menambahkan kata isyarat \'duduk\' saat dia akan duduk. Berhati-hatilah untuk tidak mengatakannya sebelum anjing Anda bergerak ke posisi atau mereka mungkin mengaitkannya dengan gerakan yang salah.<br><br>" 
+"5. Latih ini beberapa kali dalam sesi singkat tapi teratur.<br><br>
+"6. Berikan isyarat \'oke\' untuk memberi tahu anjing Anda kapan pelatihannya telah selesai.<br><br>
+ ]]></string>
+    <string name="des_2">
+        <![CDATA[<b>Panduan enam langkah untuk mengajari anjing tetap</b><br>
+    "1. Minta anjing Anda untuk berbaring.<br><br>
+    "2. Berikan isyarat tangan kepada anjing Anda - misalnya, isyarat \'stop\' dengan telapak tangan menghadap anjing Anda.<br><br>
+    "3. Alih-alih memberikan camilan langsung, tunggu beberapa detik. Katakan \'tetap\' dan kemudian berikan kepada mereka. Penting untuk memberi penghargaan kepada anjing Anda saat mereka masih berbaring, bukan jika mereka sudah bangkit.<br><br>
+    "4. Latihan ini banyak kali dalam sesi singkat tapi teratur, secara bertahap meningkatkan waktu anjing Anda tetap dalam posisi berbaring.<br><br>
+    "5. Selanjutnya, Anda dapat mulai meningkatkan jarak antara Anda dan anjing Anda. Mulailah dengan hanya mundur satu langkah sebelum memberi mereka imbalan, dan kemudian secara perlahan dan bertahap tingkatkan jarak.<br><br>
+    "6. Latihan di banyak tempat berbeda - di sekitar rumah, di taman, di rumah teman, dan di taman setempat.<br><br>
+    <b>Tips tambahan</b><br>
+    "1. Penting untuk secara bertahap memperpanjang waktu yang Anda inginkan agar anjing Anda tetap. Latih secara teratur dan tambah waktu beberapa detik setiap kali.<br><br>
+    "2. Perhatikan tanda-tanda bahwa anjing Anda akan melanggar \'tetap\' dan beri dia hadiah sebelum dia melakukannya - buat dia menang daripada gagal.<br><br>
+    "3. Anda juga dapat mengajari anjing Anda untuk tetap dalam posisi \'duduk\'. Ikuti langkah-langkah di atas, tetapi mulailah dengan meminta anjing Anda untuk duduk. ]]></string>
+
+    <string name="des_3">
+        <![CDATA[<b>Ajarkan anjing Anda berbaring dalam enam langkah mudah</b><br>
+    "1. Dengan anjing Anda dalam posisi duduk dan camilan di tangan Anda, gerakkan tangan Anda dari hidung anjing Anda ke arah dada mereka, lalu lurus ke bawah menuju lantai.<br><br>
+    "2. Anjing Anda harus mengikuti camilan ke posisi berbaring. Puji dan berikan mereka camilan segera.<br><br>
+    "3. Latihan ini beberapa kali dalam sesi singkat tapi teratur.<br><br>
+    "4. Ketika anjing Anda dengan mudah mengikuti camilan ke posisi berbaring, Anda dapat mulai mengucapkan kata \'berbaring\' tepat saat anjing Anda sedang berbaring.<br><br>
+    "5. Latihan ini beberapa kali dalam sesi singkat tapi teratur.<br><br>
+    "6. Saat anjing Anda berbaring, beri dia camilan - ini akan meningkatkan waktu yang dia habiskan berbaring.<br><br>
+    ]]>
+    </string>
+
+    <string name="des_4">
+         <![CDATA[<b>Perawatan Rutin dan Pemeriksaan Kesehatan</b><br><br>
+    Kucing menikmati perawatan rutin, yang menjaga bulu mereka tetap dalam kondisi baik. Merawat kucing Anda setiap hari adalah cara yang baik untuk memperhatikan perubahan kesehatan mereka. Ingatlah: <br><br>
+    <b>Temukan masalah kesehatan lebih awal</b> dengan memeriksa tanda-tanda cedera atau penyakit - dan jangan lupa, kucing memiliki ambang batas rasa sakit yang mirip dengan manusia.<br><br>
+    <b>Awas perubahan perilaku</b> - kucing yang stres atau tidak aman dapat menjadi tidak sehat, dan perubahan perilaku mereka bisa menjadi tanda awal bahwa ada sesuatu yang salah.<br><br>
+    <b>Perubahan mungkin tidak selalu jelas,</b> karena kucing memiliki cara yang berbeda untuk menunjukkan bahwa mereka sedih atau merasa sakit.<br><br>
+    <b>Ceklah</b> - jika Anda melihat sesuatu yang tidak biasa, termasuk perubahan perilaku atau kebiasaan merawat, bawa kucing Anda ke dokter hewan secepat mungkin. <br><br>
+    <b>Gunakan hanya obat yang diresepkan oleh dokter hewan</b> - obat manusia dan anjing dapat sangat berbahaya bagi kucing.<br><br>
+    <b>Vaksinasi dan pemasangan microchip untuk kucing Anda</b> <br>
+    Meskipun semuanya tampak baik-baik saja, masih ide bagus untuk membawa kucing Anda ke dokter hewan untuk pemeriksaan kesehatan tahunan. Ini juga akan memastikan kucing Anda memiliki vaksinasi, perawatan kutu, dan obat cacing yang terkini.<br><br>
+    Bicarakan dengan dokter hewan Anda tentang memasang microchip pada kucing Anda jika mereka belum melakukannya. Kecelakaan di jalan adalah penyebab cedera atau kematian dini yang paling umum pada kucing, tetapi kucing yang sudah dipasangi microchip lebih mungkin untuk dipersatukan dengan pemilik mereka dan mendapatkan perawatan yang mereka butuhkan jika terluka. <br><br>
+    <b>Sterilkan kucing Anda</b> <br>
+    Untuk mencegah kelahiran anak kucing yang tidak terduga, juga ide bagus untuk menjalani operasi sterilisasi atau kastrasi pada kucing Anda. Operasi sederhana ini dilakukan oleh dokter hewan, dan untuk kucing betina, sebaiknya dilakukan sebelum mereka mencapai usia empat bulan. <br><br>
+    Untuk kucing jantan, kastrasi (atau \'the snip\') akan menghentikan mereka bertarung dengan kucing lain, sehingga mereka lebih sedikit kemungkinan terluka atau terkena penyakit. Ini juga dapat menghentikan mereka menyemprot di rumah. <br>;<br>
+    <b>Ambil asuransi hewan peliharaan</b> <br>
+    "Tagihan dokter hewan dapat mahal, jadi ide bagus untuk mengambil asuransi hewan peliharaan untuk menghindari kejutan yang tidak menyenangkan. Paket perawatan kesehatan hewan peliharaan dapat membantu Anda mengelola biaya dokter hewan juga. Banyak dokter hewan menyediakan ini, termasuk praktik kelompok dokter hewan Medivet, CVS UK Ltd, dan Companion Care/Vets4Pets. Temukan dokter hewan lokal Anda untuk membahas skema perawatan kesehatan mereka.<br><br>
+     ]]></string>
+
+    <string name="des_5"> <![CDATA[<b>Menyuntik Kucing Betina Anda</b><br><br>
+    Untuk mencegah kucing betina Anda melahirkan anak kucing, dia perlu menjalani operasi sederhana yang dikenal sebagai \'menyuntik\' sebelum mencapai usia empat bulan. Ini juga dikenal sebagai \'fixing\', \'kastrasi\', atau \'being done\'. <br><br>
+    Ketika kucing Anda berusia sekitar empat bulan, dia akan mulai menarik perhatian kucing jantan, yang akan ingin kawin dengannya. Inilah sebabnya penting untuk menyuntik sebelum dia mencapai usia empat bulan, sehingga dia tidak hamil ketika dia masih anak kucing.<br><br>
+    Anda mungkin pernah mendengar bahwa baik bagi kucing betina untuk memiliki anak kucing sebelum disuntik, tetapi ini tidak benar. Begitu dia disuntik, anak kucing Anda akan dapat melakukan semua hal yang dinikmati kucing, seperti pergi ke luar, memanjat pohon, dan bermain. <br><br>
+    <b>Menyuntik Kucing Jantan Anda</b><br>
+    Jika Anda memiliki kucing jantan, dia perlu menjalani operasi sederhana yang disebut \'the snip\'. Ini dapat mencegahnya menyemprot di rumah untuk menandai wilayahnya, yang bisa sangat bau, dan mendapatkan cedera parah dari pertarungan. Dia juga kurang mungkin menjauh dan tertabrak, karena kucing yang sudah disuntik cenderung tinggal lebih dekat ke rumah. <br><br>
+    Apa yang lebih penting, menyuntik kucing Anda akan melindunginya dari penyakit berbahaya bernama FIV, yang merupakan versi kucing dari HIV. Penyebarannya melalui gigitan kucing, seringkali antara jantan yang berkelahi karena betina. Ini tidak bisa ditularkan kepada manusia. <br><br>
+    <b>Apa yang terlibat dalam operasi penyuntikan?</b><br>
+    Kucing Anda perlu dibawa ke dokter hewan dan diambil lagi pada hari yang sama. <br><br>
+    Operasinya sangat sederhana dan kucing Anda akan diberikan anestesi. Begitu mereka kembali ke rumah, mereka perlu tinggal sejenak (dokter hewan Anda akan memberi tahu Anda berapa lama), tetapi mereka akan segera pulih dan sehat kembali. <br><br>
+    ]]></string>
+
+    <string name="title_daily_notification">Multilingual Pet Conversations</string>
+    <string name="content_daily_notification">Our app is tailored to decipher the distinct languages of dogs, cats, and hamsters. From the playful barks of dogs to the subtle purrs of cats and the tiny squeaks of hamsters, you\'ll finally understand what your pets are saying.</string>
+
+
+</resources>

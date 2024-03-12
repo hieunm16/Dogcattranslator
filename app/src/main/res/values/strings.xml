@@ -1,0 +1,132 @@
+<resources>
+
+    <string name="app_name">Dog &amp; Cat Translator Prank</string>
+    <string name="animal_translator">Animal Translator</string>
+    <string name="let_play">Let\'s Play</string>
+    <string name="sound">Sound</string>
+    <string name="translator">Translator</string>
+    <string name="training">Training</string>
+    <string name="whistle">Whistle</string>
+    <string name="tap_to_record">Tap to record</string>
+    <string name="processing">Processing</string>
+    <string name="your_result">Your Result</string>
+    <string name="back_to_translating">Back To Translating</string>
+    <string name="lets_play">Let\'s Play</string>
+    <string name="install">install</string>
+    <string name="this_action_can_contain_ads">this action can contain ads...</string>
+    <string name="get_started">Get Started</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="language">Language</string>
+    <string name="intro_1">Discover our Animal Translator feature, where every pet owner\'s dream comes true. Record your pet\'s unique sounds, and our app\'s AI-powered technology provides you with a whimsical translation. It\'s a fun and delightful way to guess what your furry friends might be saying! Remember to have fun and connect deeper with your animal companions through the joy of conversation. 🐶🐱🐹</string>
+    <string name="intro_2">Ever curious about your pet\'s mood? With our Pet Mood Translator, simply record their sounds and our app translates those barks and purrs into emotions, letting you know if your furry pal is joyful, hungry, or needs some love. Connect on a heart-to-heart level with your pet companions! 🐾❤️</string>
+    <string name="intro_3">Unleash your pet\'s potential with our Pet Training Assistant feature! Tailored training exercises, positive reinforcement tips, and customizable routines guide you in teaching your furry friends new tricks and good habits. Bond, train, and have fun as you and your pet grow together! 🐕🎾📚</string>
+    <string name="with_your_pet">with your pet !</string>
+    <string name="cat">Cat</string>
+    <string name="dog">Dog</string>
+    <string name="s_angry">Angry</string>
+    <string name="s_enjoyed">Enjoyed</string>
+    <string name="s_sad">Sad</string>
+    <string name="s_happy">Happy</string>
+    <string name="s_cutie">Cutie</string>
+    <string name="s_sileneed">Sileneed</string>
+    <string name="s_elated">Elated</string>
+    <string name="s_tired">Tired</string>
+    <string name="s_excited">Excited</string>
+    <string name="s_relaxed">Relaxed</string>
+    <string name="hamster">Hamster</string>
+    <string name="permission_record">The app needs recording permission to perform this function</string>
+    <string name="translation_is_in_progress_n_please_wait_a_moment">Translation is in progress, Please wait a moment...</string>
+    <string name="check_my_result">Check My Result</string>
+    <string name="train_your_pet">Train Your Pet</string>
+    <string name="pet_sounds">Pet Sounds</string>
+    <string name="how_to_train_a_dog_to_sit">How to train a dog to sit?</string>
+    <string name="how_to_train_a_dog_to_stay">How to train a dog to stay?</string>
+    <string name="how_to_train_your_dog_to_lie_down">How to train your dog to lie down?</string>
+    <string name="how_to_keep_your_cat_healthy_and_happy">How to keep your cat healthy and happy?</string>
+    <string name="should_i_spay_or_neuter_my_cat">Should I spay or neuter my cat?</string>
+    <string name="des_1">
+    <![CDATA[
+        "<b>Teach your dog to sit in six easy steps</b><br><br>
+        1. With your dog in a standing position, hold a tasty treat near their nose.<br><br>
+
+        2. Keeping the treat near your dog\'s nose, move your hand in an arc over his head. As the dog raises his head to follow the treat, his bottom will go on the floor. The instant he sits, praise him and give him the treat.<br><br>
+
+        3. Practice this a number of times in short but regular sessions.<br><br>
+
+        4. As your dog always gets a treat for sitting, you\'ll soon find he sits for longer. You can now add the cue word \'sit\' as he goes to sit. Be careful not to say it before your dog moves into position or they may associate it with the wrong movement.<br><br>
+
+        5. Practice this a number of times in short but regular sessions.<br><br>
+
+        6. Give an \'okay\' cue to let your dog know when their training has ended.<br><br>"
+    ]]>
+</string>
+
+    <string name="des_2">
+    <![CDATA[
+        <b>A six-step guide to teaching a dog to stay</b><br><br>
+        "1. Ask your dog to lie down.<br><br>" 
+        "2. Give your dog a hand signal - for example, a 'stop' sign with the palm of your hand facing your dog.<br><br>" 
+        "3. Instead of giving your dog the treat straightaway, wait a few seconds. Say 'stay' and then give it to them. It's important to reward your dog while they're still lying down, and not if they've got back up.<br><br>" 
+        "4. Practice this many times in short but regular sessions, gradually increasing the length of time your dog stays in the down position.<br><br>" 
+        "5. Next, you can start to increase the distance between you and your dog. Start by only taking one step back before giving them the reward, and then slowly and gradually increase the distance.<br><br>" 
+        "6. Practice in lots of different places - around the house, in the garden, at a friend's house, and in the local park.<br><br>" 
+        "<b>Extra tips</b><br><br>" 
+        "1. It's important to gradually extend the time you want your dog to stay. Practice regularly and increase the time by a few seconds each time.<br><br>" 
+        "2. Look out for signs that your dog is going to break the 'stay' and reward him before he does - set him up to win rather than fail.<br><br>" 
+        "3. You can also teach your dog to stay in a 'sit' position. Follow the steps above, but start by asking your dog to sit."
+    ]]>
+</string>
+
+
+    <string name="des_3">
+    <![CDATA[
+        <b>Teach your dog to lie down in six easy steps</b><br><br>
+        "1. With your dog in a sitting position and a treat in your hand, move your hand from your dog's nose towards their chest, then straight down towards the floor.<br><br>" 
+        "2. Your dog should follow the treat into a lying down position. Praise and reward them with the treat immediately.<br><br>" 
+        "3. Practice this a number of times in short but regular sessions.<br><br>" 
+        "4. When your dog is easily following the treat into a down position, you can start to say the word 'down' just as your dog is getting into the down position.<br><br>" 
+        "5. Practice this a number of times in short but regular sessions.<br><br>" 
+        "6. While your dog is lying down, give him treats - this will increase the time he spends lying down.<br><br>"
+    ]]>
+</string>
+
+    <string name="des_4">
+    <![CDATA[
+        <b>Regular grooming and health checks</b><br><br>
+        "Cats enjoy regular grooming, which keeps their coat in good condition. Grooming your cat each day is a great way to notice changes in their health. Remember:<br><br>" 
+        "<b>Spot health problems early</b> by checking for signs of injury or illness - and don't forget, cats have a similar pain threshold to people.<br><br>" 
+        "<b>Keep an eye out for behavior changes</b> - stressed or insecure cats can become unwell, and changes to their behavior can be an early sign that something's wrong.<br><br>" 
+        "<b>Changes may not always be obvious,</b> as cats can have different ways of showing that they're upset or in pain.<br><br>" 
+        "<b>Get it checked</b> - if you notice anything unusual, including changes in behavior or grooming habits, take your cat to the vet as soon as possible.<br><br>" 
+        "<b>Only use medicine your vet has prescribed</b> - human and dog medicines can be very dangerous to cats.<br><br>" 
+        "<b>Get your cat vaccinated and microchipped</b><br><br>" 
+        "Even if all seems well, it's still a good idea to take your cat to the vet for an annual health check. This will also make sure your cat is up to date with their vaccinations, flea treatments, and wormer.<br><br>" 
+        "Speak to your vet about getting your cat microchipped if they aren't already. Road accidents are the most common cause of injury or early death in cats, but microchipped cats are more likely to be reunited with their owners and get the care they need if they're injured.<br><br>" 
+        "<b>Get your cat neutered</b><br><br>" 
+        "To prevent unexpected kittens, it's also a good idea to get your cat spayed or neutered. This simple operation is carried out by a vet, and for female cats, it should be done before they reach four months.<br><br>" 
+        "For male cats, neutering (or 'the snip') will stop them from fighting with other cats, so they're less likely to be injured or catch diseases. It can also stop them from spraying in the house.<br><br>" 
+        "<b>Take out pet insurance</b><br><br>" 
+        "Vet bills can be expensive, so it's a good idea to take out pet insurance to save you from any nasty surprises. Pet health care packages can help you manage vet costs too. Many vets provide these, including Medivet, CVS UK Ltd veterinary group practices, and Companion Care/Vets4Pets. Find your local vet to discuss their healthcare scheme.<br><br>"
+    ]]>
+</string>
+
+    <string name="des_5">
+    <![CDATA[
+        <b>Getting your female cat spayed</b><br><br>
+        "To stop your female cat from having kittens, she'll need to have a simple operation known as 'spaying' before she turns four months old. This is also known as 'fixing', 'neutering', or 'being done'.<br><br>" 
+        "When your cat is about four months old, she'll start to attract the attention of tomcats, who'll want to mate with her. This is why it's important to have her spayed before she reaches four months, so she doesn't get pregnant while she's still a kitten herself.<br><br>" 
+        "You may have heard that it's good for female cats to have a litter of kittens before they are spayed, but this isn't true. Once she's been spayed, your kitten will be able to do all the things cats enjoy doing, like going outdoors, climbing trees, and playing.<br><br>" 
+        "<b>Getting your boy cat snipped</b><br><br>" 
+        "If you have a male cat, he'll need to have a simple operation called 'the snip'. This can stop him from spraying in your house to mark his territory, which can be very smelly, and getting nasty injuries from fights. He's also less likely to wander off and get run over, as cats who've been snipped tend to stay closer to home.<br><br>" 
+        "What's more, having your cat snipped will protect him from a nasty disease called FIV, which is the cat version of HIV. It's spread through cat bites, often between males fighting over a female. It can't be caught by people.<br><br>" 
+        "<b>What's involved in the neutering operation?</b><br><br>" 
+        "Your cat will need to be dropped off at the vet and picked up again later that same day.<br><br>" 
+        "The operation is very simple and your cat will be given an anaesthetic. Once they're back home, they'll need to stay in for a short time (your vet will tell you how long), but they'll soon be fit and well again.<br><br>"
+    ]]>
+</string>
+    <string name="title_daily_notification">Multilingual Pet Conversations</string>
+    <string name="content_daily_notification">Our app is tailored to decipher the distinct languages of dogs, cats, and hamsters. From the playful barks of dogs to the subtle purrs of cats and the tiny squeaks of hamsters, you\'ll finally understand what your pets are saying.</string>
+
+
+</resources>

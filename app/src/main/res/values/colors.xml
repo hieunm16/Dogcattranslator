@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_2A699F">#2A699F</color>
+    <color name="color_F6F8F8">#F6F8F8</color>
+    <color name="color_8B93A7">#8B93A7</color>
+    <color name="color_1E252B">#1E252B</color>
+    <color name="color_26272F">#26272F</color>
+    <color name="color_F4F3F1">#F4F3F1</color>
+    <color name="color_C6A704">#C6A704</color>
+    <color name="color_C5C9D3">#C5C9D3</color>
+    <color name="color_D7E7F4">#D7E7F4</color>
+    <color name="color_D9D9D9">#D9D9D9</color>
+    <color name="color_0066FF">#0066FF</color>
+    <color name="color_B8603C">#B8603C</color>
+    <color name="color_009067">#009067</color>
+    <color name="color_FF8C19">#FF8C19</color>
+    <color name="color_FF233F">#FF233F</color>
+    <color name="color_FF5031">#FF5031</color>
+    <color name="color_6CCEEB">#6CCEEB</color>
+    <color name="color_186456">#186456</color>
+    <color name="color_85399F">#85399F</color>
+    <color name="color_A8ACEC">#A8ACEC</color>
+
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <!-- colors for button style -->
+
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
+
+    <!-- colors for tab and screent text -->
+
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+
+
+    //ads
+    <color name="colorAds">#068ABF</color>
+</resources>

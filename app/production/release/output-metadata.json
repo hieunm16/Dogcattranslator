@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.wa.dog.cat.sound.prank",
+  "variantName": "productionRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 1,
+      "versionName": "1.0.0",
+      "outputFile": "AppDogAndCatTranslatorPlank1.0.0(1)_03.12.2024-production-release.apk"
+    }
+  ],
+  "elementType": "File"
+}

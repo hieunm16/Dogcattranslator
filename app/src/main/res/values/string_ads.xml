@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //ID Test
+    //app id
+    <string name="app_id" translatable="false">ca-app-pub-3621741958408545~9063639598</string>
+
+    //banner
+    <string name="collap_banner_anim_home" translatable="false">ca-app-pub-3621741958408545/6666854194</string>
+    <string name="collap_banner_anim_cate" translatable="false">ca-app-pub-3621741958408545/6481708282</string>
+    <string name="banner_over_view" translatable="false">ca-app-pub-3621741958408545/5168626614</string>
+
+    //open app
+    <string name="open_app" translatable="false">ca-app-pub-3621741958408545/2111218434</string>
+
+    //inter
+    <string name="inter_anim_overview" translatable="false">ca-app-pub-3621741958408545/2986876909</string>
+    <string name="inter_anim_detail_sound" translatable="false">ca-app-pub-3621741958408545/5416038629</string>
+    <string name="inter_anim_detail_training" translatable="false">ca-app-pub-3621741958408545/1673795234</string>
+
+    //native
+    <string name="native_detail_sound" translatable="false">ca-app-pub-3621741958408545/5720851458</string>
+    <string name="native_whistle" translatable="false">ca-app-pub-3621741958408545/9360713562</string>
+    <string name="native_sound" translatable="false">ca-app-pub-3621741958408545/2727609184</string>
+    <string name="native_process" translatable="false">ca-app-pub-3621741958408545/2789875280</string>
+    <string name="native_result" translatable="false">ca-app-pub-3621741958408545/1476793610</string>
+    <string name="native_choose_lang" translatable="false">ca-app-pub-3621741958408545/9163711942</string>
+
+    //Rewarded
+    <string name="rewarded_processing" translatable="false">ca-app-pub-3621741958408545/1341062242</string>
+
+
+</resources>
