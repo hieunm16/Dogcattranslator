@@ -8,7 +8,9 @@ import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.FullScreenContentCallback
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.OnUserEarnedRewardListener
 import com.google.android.gms.ads.admanager.AdManagerAdRequest
@@ -20,6 +22,7 @@ import com.wa.dog.cat.sound.prank.databinding.ActivityProcessingBinding
 import com.wa.dog.cat.sound.prank.databinding.AdNativeVideoBinding
 import com.wa.dog.cat.sound.prank.extension.gone
 import com.wa.dog.cat.sound.prank.extension.setFullScreen
+import com.wa.dog.cat.sound.prank.extension.setStatusBarColor
 import com.wa.dog.cat.sound.prank.utils.RemoteConfigHelper
 import com.wa.dog.cat.sound.prank.utils.RemoteConfigKey
 import com.wa.dog.cat.sound.prank.utils.ads.NativeAdsUtils
@@ -39,7 +42,7 @@ class ProcessingActivity : AppCompatActivity() {
 
         binding = ActivityProcessingBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setFullScreen()
+        setStatusBarColor("#ffffff")
         remoteConfigHelper.loadConfig()
         setUpRewardedAds()
         initControl()
@@ -74,7 +77,6 @@ class ProcessingActivity : AppCompatActivity() {
     private fun goToResult(){
         val intent = Intent (this, ResultActivity::class.java)
         startActivity(intent)
-        finish()
     }
 
 
@@ -115,30 +117,40 @@ class ProcessingActivity : AppCompatActivity() {
 
     }
 
-
-    private fun showAds(){
+    private fun showAds() {
         binding.btnResult.setOnClickListener {
-
-            if (rewardedAd != null){
-                rewardedAd?.fullScreenContentCallback =
-                    object : com.google.android.gms.ads.FullScreenContentCallback() {
-                        override fun onAdDismissedFullScreenContent() {
-                            rewardedAd!!.show(this@ProcessingActivity){
-                                goToResult()
-                            }
-                        }
-
-                        override fun onAdFailedToShowFullScreenContent(adError: com.google.android.gms.ads.AdError) {
-                            rewardedAd!!.show(this@ProcessingActivity){
-                                goToResult()
-                            }
-                        }
+            rewardedAd?.let { ad ->
+                ad.fullScreenContentCallback = object : FullScreenContentCallback() {
+                    override fun onAdDismissedFullScreenContent() {
+                        super.onAdDismissedFullScreenContent()
+                        // Called when ad is dismissed
+                        // You may want to load a new rewarded ad here if needed
+                        goToResult()
+                        finish()
                     }
-            }else {
+
+                    override fun onAdFailedToShowFullScreenContent(adError: AdError) {
+                        super.onAdFailedToShowFullScreenContent(adError)
+                        // Called when ad failed to show
+                        // You may want to load a new rewarded ad here if needed
+                        goToResult()
+                        finish()
+                    }
+                }
+                ad.show(this) {
+                    // This block is executed when the ad is shown
+                    // You can add additional logic if needed
+                }
+            } ?: run {
+                Log.d("ProcessingActivity", "The rewarded ad wasn't ready yet.")
                 goToResult()
+                finish()
             }
         }
     }
+
+
+
 
 
     private fun loadNativeAds(keyAds:String) {

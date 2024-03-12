@@ -127,6 +127,8 @@ class TranslatorFragment : Fragment() {
             stopTimer()
             val intent = Intent(requireContext(), ProcessingActivity::class.java)
             startActivity(intent)
+            binding.icDoneRecord.visibility = View.GONE
+            binding.icCloseRecord.visibility = View.GONE
 
         }
 
