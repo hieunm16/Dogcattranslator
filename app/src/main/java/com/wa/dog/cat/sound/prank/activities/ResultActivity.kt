@@ -30,6 +30,9 @@ class ResultActivity : AppCompatActivity() {
     }
     private var lastPlayedRawResourceId: Int? = null
     private var isPlaying: Boolean = false
+    private var isPlayingAfter = false
+    private var isPlayingBefore = false
+
     private val remoteConfigHelper: RemoteConfigHelper by lazy { RemoteConfigHelper() }
 
 
@@ -59,6 +62,89 @@ class ResultActivity : AppCompatActivity() {
             }
         }
     }
+    // Function to stop llVoiceBefore playback
+    private fun stopBeforePlayback() {
+        binding.llVoiceBefore.icPlay.setBackgroundResource(R.drawable.ic_play_result)
+        mediaPlayer.pause()
+        binding.llVoiceBefore.ltLoading.cancelAnimation()
+        isPlayingBefore = false
+    }
+
+    // Function to stop llVoiceAfter playback
+    private fun stopAfterPlayback() {
+        binding.llVoiceAfter.icPlay.setBackgroundResource(R.drawable.ic_play_result)
+        mediaPlayer.pause()
+        binding.llVoiceAfter.ltLoading.cancelAnimation()
+        isPlayingAfter = false
+    }
+
+    // Function to play llVoiceBefore
+    private fun playBefore() {
+        binding.llVoiceBefore.icPlay.setBackgroundResource(R.drawable.ic_pause_result)
+        if (!mediaPlayer.isPlaying) {
+            mediaPlayer.reset()
+            mediaPlayer.setDataSource(getRecordingFilePath())
+            mediaPlayer.prepareAsync()
+            binding.llVoiceBefore.ltLoading.cancelAnimation()
+
+            mediaPlayer.setOnPreparedListener {
+                mediaPlayer.start()
+                setupLottie()
+            }
+
+            mediaPlayer.setOnCompletionListener {
+                mediaPlayer.reset()
+                binding.llVoiceBefore.ltLoading.cancelAnimation()
+                binding.llVoiceBefore.icPlay.setBackgroundResource(R.drawable.ic_play_result)
+                isPlayingBefore = false
+            }
+        } else {
+            mediaPlayer.start()
+            setupLottie()
+        }
+        isPlayingBefore = true
+    }
+
+    // Function to play llVoiceAfter
+    private fun playAfter() {
+        val rawResourceIds = getSoundResourceIds()
+        if (rawResourceIds.isNotEmpty()) {
+            val randomRawResourceId = getRandomResourceId(rawResourceIds)
+            val playResourceId = lastPlayedRawResourceId ?: randomRawResourceId
+
+            binding.llVoiceAfter.icPlay.setBackgroundResource(R.drawable.ic_pause_result)
+            if (!mediaPlayer.isPlaying) {
+                mediaPlayer.reset()
+                mediaPlayer.setDataSource(resources.openRawResourceFd(playResourceId))
+                mediaPlayer.prepareAsync()
+                binding.llVoiceAfter.ltLoading.cancelAnimation()
+
+                mediaPlayer.setOnPreparedListener {
+                    mediaPlayer.start()
+                    lastPlayedRawResourceId = playResourceId
+                    binding.llVoiceAfter.ltLoading.setAnimation(R.raw.lt_record_loading)
+                    binding.llVoiceAfter.ltLoading.loop(true)
+                    binding.llVoiceAfter.ltLoading.playAnimation()
+                }
+
+                mediaPlayer.setOnCompletionListener {
+                    mediaPlayer.reset()
+                    binding.llVoiceAfter.ltLoading.cancelAnimation()
+                    binding.llVoiceAfter.icPlay.setBackgroundResource(R.drawable.ic_play_result)
+                    isPlayingAfter = false
+                }
+            } else {
+                mediaPlayer.start()
+                lastPlayedRawResourceId = playResourceId
+                binding.llVoiceAfter.ltLoading.setAnimation(R.raw.lt_record_loading)
+                binding.llVoiceAfter.ltLoading.loop(true)
+                binding.llVoiceAfter.ltLoading.playAnimation()
+            }
+            isPlayingAfter = true
+        }
+    }
+
+
 
     @RequiresApi(Build.VERSION_CODES.S)
     private fun initControl() {
@@ -72,51 +158,26 @@ class ResultActivity : AppCompatActivity() {
             finish()
         }
 
+        // Click listener for llVoiceBefore
         binding.llVoiceBefore.icPlay.setOnClickListener {
-            Handler(mainLooper).post {
-                if (isPlaying) {
-                    // Nếu đang phát, tạm dừng và cập nhật UI
-                    binding.llVoiceBefore.icPlay.setBackgroundResource(R.drawable.ic_play_result)
-                    mediaPlayer.pause()
-                    binding.llVoiceBefore.ltLoading.cancelAnimation()
-                } else {
-                    // Nếu đang tạm dừng hoặc chưa bắt đầu phát
-                    binding.llVoiceBefore.icPlay.setBackgroundResource(R.drawable.ic_pause_result)
-                    if (!mediaPlayer.isPlaying) {
-                        mediaPlayer.reset()
-                        mediaPlayer.setDataSource(getRecordingFilePath())
-                        mediaPlayer.prepareAsync()
-                        binding.llVoiceBefore.ltLoading.cancelAnimation()
-
-                        mediaPlayer.setOnPreparedListener {
-                            // Khi MediaPlayer đã chuẩn bị xong, bắt đầu phát
-                            mediaPlayer.start()
-                            setupLottie()
-                        }
-
-                        mediaPlayer.setOnCompletionListener {
-                            // Đảm bảo giải phóng MediaPlayer sau khi phát xong
-                            mediaPlayer.reset()
-                            binding.llVoiceBefore.ltLoading.cancelAnimation()
-
-
-                            // Cập nhật UI khi âm thanh kết thúc
-                            binding.llVoiceBefore.icPlay.setBackgroundResource(R.drawable.ic_play_result)
-                            isPlaying = false
-                        }
-                    } else {
-                        // Nếu đang phát, tiếp tục phát và cập nhật UI
-                        mediaPlayer.start()
-                        setupLottie()
-                    }
-                }
-                isPlaying = !isPlaying
+            if (isPlayingBefore) {
+                stopBeforePlayback()
+            } else {
+                stopAfterPlayback()
+                playBefore()
             }
         }
 
+// Click listener for llVoiceAfter
         binding.llVoiceAfter.icPlay.setOnClickListener {
-            playRandomFile()
+            if (isPlayingAfter) {
+                stopAfterPlayback()
+            } else {
+                stopBeforePlayback()
+                playAfter()
+            }
         }
+
 
     }
 
