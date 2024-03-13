@@ -48,7 +48,7 @@ class NotificationWorker(
         )
 
         val notification = NotificationCompat.Builder(applicationContext, channelWorkId)
-            .setSmallIcon(R.drawable.cat_cutie)
+            .setSmallIcon(R.mipmap.ic_launcher)
             .setAutoCancel(true)
             .setVibrate(longArrayOf(1000, 1000, 1000, 1000))
             .setOnlyAlertOnce(true)

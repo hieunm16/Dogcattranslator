@@ -27,7 +27,6 @@ import com.wa.dog.cat.sound.prank.databinding.ActivityHomeBinding
 import com.wa.dog.cat.sound.prank.extension.gone
 import com.wa.dog.cat.sound.prank.extension.setFullScreen
 import com.wa.dog.cat.sound.prank.utils.NotificationWorker
-import com.wa.dog.cat.sound.prank.utils.RemoteConfigHelper
 import com.wa.dog.cat.sound.prank.utils.RemoteConfigKey
 import com.wa.dog.cat.sound.prank.utils.ads.BannerUtils
 import com.wa.dog.cat.sound.prank.utils.device.DeviceUtils

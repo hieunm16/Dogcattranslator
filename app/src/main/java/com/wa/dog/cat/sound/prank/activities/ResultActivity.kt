@@ -15,6 +15,7 @@ import com.wa.dog.cat.sound.prank.databinding.ActivityResultBinding
 import com.wa.dog.cat.sound.prank.databinding.AdNativeVideoBinding
 import com.wa.dog.cat.sound.prank.extension.gone
 import com.wa.dog.cat.sound.prank.extension.setFullScreen
+import com.wa.dog.cat.sound.prank.extension.setStatusBarColor
 import com.wa.dog.cat.sound.prank.fragment.TranslatorFragment
 import com.wa.dog.cat.sound.prank.utils.RemoteConfigHelper
 import com.wa.dog.cat.sound.prank.utils.RemoteConfigKey
@@ -41,8 +42,8 @@ class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityResultBinding.inflate(layoutInflater)
+        setStatusBarColor("#ffffff")
         setContentView(binding.root)
-        setFullScreen()
         remoteConfigHelper.loadConfig()
         initControl()
 
