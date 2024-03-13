@@ -41,7 +41,6 @@ class HomeActivity : AppCompatActivity() {
 
     private  var mFirebaseAnalytics: FirebaseAnalytics? = null
 
-    private val remoteConfigHelper: RemoteConfigHelper by lazy { RemoteConfigHelper() }
 
 
     companion object {
@@ -55,7 +54,6 @@ class HomeActivity : AppCompatActivity() {
         setFullScreen()
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
         analytics =  Firebase.analytics
-        remoteConfigHelper.loadConfig()
         MobileAds.initialize(this)
         initNotificationWorker()
         initControl()

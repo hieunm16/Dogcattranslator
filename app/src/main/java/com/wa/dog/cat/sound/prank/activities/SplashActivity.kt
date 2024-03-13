@@ -10,6 +10,7 @@ import com.google.firebase.analytics.FirebaseAnalytics
 import com.wa.dog.cat.sound.prank.databinding.ActivityMainBinding
 import com.wa.dog.cat.sound.prank.extension.setFullScreen
 import com.wa.dog.cat.sound.prank.utils.Constant
+import com.wa.dog.cat.sound.prank.utils.RemoteConfigHelper
 import com.wa.dog.cat.sound.prank.utils.ads.MyApplication
 
 
@@ -19,6 +20,8 @@ class SplashActivity : AppCompatActivity() {
     private val SPLASH_DELAY: Long = 10000
     private val COUNT_DOWN_INTERVAL: Long = 1000
     val bundle = Bundle()
+    private val remoteConfigHelper: RemoteConfigHelper by lazy { RemoteConfigHelper() }
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +29,7 @@ class SplashActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setFullScreen()
+        remoteConfigHelper.loadConfig()
         MobileAds.initialize(this)
         val application: Application = application
         (application as MyApplication).loadAd(this)
