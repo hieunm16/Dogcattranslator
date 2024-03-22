@@ -2,6 +2,7 @@ package com.wa.dog.cat.sound.prank.adapter
 
 import android.content.Context
 import android.graphics.drawable.GradientDrawable
+import android.text.Html
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -29,6 +30,10 @@ class TrainingAdapter(var context: Context, var listTraining:ArrayList<TrainingI
         val holderItem = holder as TrainingAdapter.ViewHolderTraining
         item.icon?.let { holderItem.viewBinding.imgTraining.setImageResource(it) }
         holderItem.viewBinding.titleTraining.text = item.title
+        // Loại bỏ tất cả các khoảng trống giữa các dòng trong item.des
+        val trimmedDes = item.des?.trim()!!.replace("<br>", "")
+
+        holderItem.viewBinding.contentTraining.text = Html.fromHtml(trimmedDes)
         holderItem.itemView.setOnClickListener {
             onClickItem(position, item)
         }

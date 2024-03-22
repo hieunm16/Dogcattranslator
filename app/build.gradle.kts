@@ -189,6 +189,8 @@ dependencies {
     implementation("com.google.android.gms:play-services-ads-identifier:18.0.1")
     implementation("com.google.android.gms:play-services-appset:16.0.2")
 
+    implementation("com.google.android.ump:user-messaging-platform:2.2.0")
+
     //Hilt
     implementation("com.google.dagger:hilt-android:2.46.1")
     kapt("com.google.dagger:hilt-android-compiler:2.44")

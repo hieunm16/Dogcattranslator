@@ -20,6 +20,7 @@ import com.wa.dog.cat.sound.prank.extension.gone
 import com.wa.dog.cat.sound.prank.extension.setFullScreen
 import com.wa.dog.cat.sound.prank.extension.setStatusBarColor
 import com.wa.dog.cat.sound.prank.model.SoundItem
+import com.wa.dog.cat.sound.prank.utils.LanguageUtil.setLocale
 import com.wa.dog.cat.sound.prank.utils.RemoteConfigHelper
 import com.wa.dog.cat.sound.prank.utils.RemoteConfigKey
 import com.wa.dog.cat.sound.prank.utils.ads.NativeAdsUtils
@@ -129,6 +130,10 @@ class DetailSoundActivity : AppCompatActivity() {
 
                 if (mediaPlayer == null) {
                     mediaPlayer = MediaPlayer()
+
+                    mediaPlayer?.setDataSource(this, soundUri)
+                    mediaPlayer?.prepareAsync()
+
                     mediaPlayer?.setOnPreparedListener {
                         Log.d("SoundAdapter", "MediaPlayer prepared successfully")
                         isMediaPlayerPrepared = true
@@ -141,17 +146,20 @@ class DetailSoundActivity : AppCompatActivity() {
                         currentlyPlayingPosition = null
                         binding.imvPlay.setImageResource(R.drawable.ic_play_result)
                         binding.ltSoundDetail.pauseAnimation()
+                        mediaPlayer?.release()
+                        mediaPlayer = null
                     }
 
                     mediaPlayer?.setOnErrorListener { _, _, what ->
                         Timber.tag("SoundAdapter").e("Error during MediaPlayer preparation. What: %s", what)
                         false
                     }
-
-                    mediaPlayer?.setDataSource(this, soundUri)
-                    mediaPlayer?.prepareAsync()
                 } else {
-                    if (isMediaPlayerPrepared) {
+                    if (!isMediaPlayerPrepared) {
+                        mediaPlayer?.reset()
+                        mediaPlayer?.setDataSource(this, soundUri)
+                        mediaPlayer?.prepareAsync()
+                    } else {
                         if (mediaPlayer?.isPlaying == true) {
                             mediaPlayer?.pause()
                             binding.imvPlay.setImageResource(R.drawable.ic_play_result)
@@ -161,19 +169,18 @@ class DetailSoundActivity : AppCompatActivity() {
                             binding.imvPlay.setImageResource(R.drawable.ic_pause_result)
                             binding.ltSoundDetail.playAnimation()
                         }
-                    } else {
-                        // Handle the case when MediaPlayer is not prepared
-                        mediaPlayer?.setDataSource(this, soundUri)
-                        mediaPlayer?.prepareAsync()
                     }
                 }
             } catch (e: IOException) {
+                e.printStackTrace()
                 Log.e("SoundAdapter", "Error setting data source: $e")
             }
         } else {
             Log.e("SoundAdapter", "Invalid sound file name")
         }
     }
+
+
 
     @SuppressLint("SuspiciousIndentation")
     private fun loadNativeAds(keyAds:String) {

@@ -81,11 +81,16 @@ class OverviewActivity : AppCompatActivity() {
     }
 
 
-    private fun setCurrentFragment(fragment: Fragment)=
-        supportFragmentManager.beginTransaction().apply {
-            replace(R.id.frameFragment,fragment)
-            commit()
+    private fun setCurrentFragment(fragment: Fragment) {
+        val currentFragment = supportFragmentManager.findFragmentById(R.id.frameFragment)
+        if (currentFragment != fragment) {
+            supportFragmentManager.beginTransaction().apply {
+                replace(R.id.frameFragment, fragment)
+                commit()
+            }
         }
+    }
+
 
     private fun loadAds(){
         if (FirebaseRemoteConfig.getInstance().getBoolean(RemoteConfigKey.SHOW_ADS_BANNER_OVERVIEW)) {

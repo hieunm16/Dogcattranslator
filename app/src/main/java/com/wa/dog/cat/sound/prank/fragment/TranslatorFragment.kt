@@ -105,9 +105,12 @@ class TranslatorFragment : Fragment() {
 
         binding.icCloseRecord.setOnClickListener {
             try {
-                mediaRecorder?.stop()
-                binding.imvTransfer.isEnabled = true
-                mediaRecorder?.release()
+                // Kiểm tra xem MediaRecorder đã được khởi tạo và đang ở trạng thái Recording không
+                if (mediaRecorder != null && isRecording) {
+                    mediaRecorder?.stop()
+                    binding.imvTransfer.isEnabled = true
+                    mediaRecorder?.release()
+                }
             } catch (e: IllegalStateException) {
                 e.printStackTrace()
             }
@@ -115,6 +118,7 @@ class TranslatorFragment : Fragment() {
             binding.icCloseRecord.visibility = View.GONE
             stopTimer()
         }
+
 
         binding.icDoneRecord.setOnClickListener {
             try {
@@ -266,7 +270,7 @@ class TranslatorFragment : Fragment() {
     }
 
     private fun stopRecording() {
-        if (isRecording) {
+        if (isRecording && mediaRecorder != null) {
             try {
                 // Dừng ghi âm
                 mediaRecorder?.stop()

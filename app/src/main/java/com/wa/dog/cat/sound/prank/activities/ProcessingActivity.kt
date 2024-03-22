@@ -8,14 +8,22 @@ import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.adjust.sdk.Adjust
+import com.adjust.sdk.AdjustAdRevenue
+import com.adjust.sdk.AdjustConfig
 import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdapterResponseInfo
 import com.google.android.gms.ads.FullScreenContentCallback
 import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.OnPaidEventListener
 import com.google.android.gms.ads.OnUserEarnedRewardListener
 import com.google.android.gms.ads.admanager.AdManagerAdRequest
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.google.android.gms.ads.rewarded.RewardedAd
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.wa.dog.cat.sound.prank.R
 import com.wa.dog.cat.sound.prank.databinding.ActivityProcessingBinding
@@ -33,7 +41,11 @@ import kotlinx.coroutines.launch
 
 class ProcessingActivity : AppCompatActivity() {
     private lateinit var binding : ActivityProcessingBinding
-    private var rewardedAd: RewardedAd? = null
+    private var mInterstitialAd: InterstitialAd? = null
+    private  var mFirebaseAnalytics: FirebaseAnalytics? = null
+    private var analytics : FirebaseAnalytics? = null
+
+
     private val remoteConfigHelper: RemoteConfigHelper by lazy { RemoteConfigHelper() }
 
 
@@ -44,7 +56,6 @@ class ProcessingActivity : AppCompatActivity() {
         setContentView(binding.root)
         setStatusBarColor("#ffffff")
         remoteConfigHelper.loadConfig()
-        setUpRewardedAds()
         initControl()
     }
 
@@ -65,6 +76,18 @@ class ProcessingActivity : AppCompatActivity() {
 
             }
         }
+
+        if (FirebaseRemoteConfig.getInstance()
+                .getBoolean(RemoteConfigKey.SHOW_ADS_INTER_PROCESS)
+        ) {
+            val adConfig = FirebaseRemoteConfig.getInstance()
+                .getString(RemoteConfigKey.KEY_SHOW_ADS_INTER_PROCESS)
+            if (adConfig.isNotEmpty()) {
+                loadInterAds(adConfig)
+            } else {
+                loadInterAds(getString(R.string.inter_anim_overview))
+            }
+        }
     }
 
     private fun showButtonResult(){
@@ -80,71 +103,69 @@ class ProcessingActivity : AppCompatActivity() {
     }
 
 
-    private fun setUpRewardedAds(){
-        var adRequest = AdRequest.Builder().build()
-        if (FirebaseRemoteConfig.getInstance().getBoolean(RemoteConfigKey.SHOW_ADS_REWARDED_PROCESS)) {
-            val adConfig = FirebaseRemoteConfig.getInstance()
-                .getString(RemoteConfigKey.KEY_SHOW_ADS_REWARDED_PROCESS)
-            if (adConfig.isNotEmpty()) {
-                RewardedAd.load(this,adConfig, adRequest, object : RewardedAdLoadCallback() {
-                    override fun onAdFailedToLoad(adError: LoadAdError) {
-                        adError.toString().let { Log.d("TAG", it) }
-                        rewardedAd = null
-                    }
+    private fun loadInterAds(keyAdsInter: String) {
+        InterstitialAd.load(
+            this,
+            keyAdsInter,
+            AdRequest.Builder().build(),
+            object : InterstitialAdLoadCallback() {
+                override fun onAdLoaded(interstitialAd: InterstitialAd) {
+                    mInterstitialAd = interstitialAd
+                    mFirebaseAnalytics?.logEvent("d_load_inter_ads_process_screen", null)
 
-                    override fun onAdLoaded(ad: RewardedAd) {
-                        Log.d("ProcessingActivity", "Ad was loaded.")
-                        rewardedAd = ad
-                    }
-                })
-            } else {
-                RewardedAd.load(this,getString(R.string.rewarded_processing), adRequest, object : RewardedAdLoadCallback() {
-                    override fun onAdFailedToLoad(adError: LoadAdError) {
-                        adError.toString().let { Log.d("TAG", it) }
-                        rewardedAd = null
-                    }
+                    mInterstitialAd?.onPaidEventListener =
+                        OnPaidEventListener { adValue -> // Lấy thông tin về nhà cung cấp quảng cáo
+                            val loadedAdapterResponseInfo : AdapterResponseInfo? =
+                                interstitialAd.responseInfo.loadedAdapterResponseInfo
+                            // Gửi thông tin doanh thu quảng cáo đến Adjust
+                            val adRevenue = AdjustAdRevenue(AdjustConfig.AD_REVENUE_ADMOB)
+                            val revenue = adValue.valueMicros.toDouble() / 1000000.0
+                            adRevenue.setRevenue(
+                                revenue,
+                                adValue.currencyCode
+                            )
+                            adRevenue.setAdRevenueNetwork(loadedAdapterResponseInfo?.adSourceName)
+                            Adjust.trackAdRevenue(adRevenue)
+                            analytics = FirebaseAnalytics.getInstance(applicationContext)
+                            val params = Bundle()
+                            params.putString(FirebaseAnalytics.Param.AD_PLATFORM, "admob mediation")
+                            params.putString(FirebaseAnalytics.Param.AD_SOURCE, "AdMob")
+                            params.putString(FirebaseAnalytics.Param.AD_FORMAT, "Interstitial")
+                            params.putDouble(FirebaseAnalytics.Param.VALUE, revenue )
+                            params.putString(FirebaseAnalytics.Param.CURRENCY, "USD")
+                            analytics?.logEvent(FirebaseAnalytics.Event.AD_IMPRESSION, params)
+                        }
+                }
 
-                    override fun onAdLoaded(ad: RewardedAd) {
-                        Log.d("ProcessingActivity", "Ad was loaded.")
-                        rewardedAd = ad
-                    }
-                })
+                override fun onAdFailedToLoad(loadAdError: LoadAdError) {
+                    mInterstitialAd = null
+                    mFirebaseAnalytics?.logEvent("e_load_inter_ads_process_screen", null)
 
-            }
-        }
-
-
-
+                }
+            })
     }
 
     private fun showAds() {
         binding.btnResult.setOnClickListener {
-            rewardedAd?.let { ad ->
-                ad.fullScreenContentCallback = object : FullScreenContentCallback() {
-                    override fun onAdDismissedFullScreenContent() {
-                        super.onAdDismissedFullScreenContent()
-                        // Called when ad is dismissed
-                        // You may want to load a new rewarded ad here if needed
-                        goToResult()
-                        finish()
-                    }
+            val intent = Intent(this, ResultActivity::class.java)
+            if (mInterstitialAd != null) {
+                // Nếu quảng cáo đã tải xong, hiển thị quảng cáo và chuyển đến Activity mới sau khi quảng cáo kết thúc
+                mInterstitialAd?.fullScreenContentCallback =
+                    object : FullScreenContentCallback() {
+                        override fun onAdDismissedFullScreenContent() {
+                            startActivity(intent)
+                        }
 
-                    override fun onAdFailedToShowFullScreenContent(adError: AdError) {
-                        super.onAdFailedToShowFullScreenContent(adError)
-                        // Called when ad failed to show
-                        // You may want to load a new rewarded ad here if needed
-                        goToResult()
-                        finish()
+                        override fun onAdFailedToShowFullScreenContent(adError: AdError) {
+                            startActivity(intent)
+                        }
                     }
-                }
-                ad.show(this) {
-                    // This block is executed when the ad is shown
-                    // You can add additional logic if needed
-                }
-            } ?: run {
-                Log.d("ProcessingActivity", "The rewarded ad wasn't ready yet.")
-                goToResult()
-                finish()
+                mInterstitialAd?.show(this)
+
+                mFirebaseAnalytics?.logEvent("v_inter_ads_home_screen", null)
+            } else {
+                // Nếu quảng cáo chưa tải xong, chuyển đến Activity mới ngay lập tức
+                startActivity(intent)
             }
         }
     }

@@ -44,7 +44,6 @@ class MyApplication : Application(), Application.ActivityLifecycleCallbacks,
         super<Application>.onCreate()
         registerActivityLifecycleCallbacks(this)
         ProcessLifecycleOwner.get().lifecycle.addObserver(this)
-        loadConfig()
         initTrackingAdjust()
         appOpenAdManager = AppOpenAdManager()
     }
@@ -63,7 +62,6 @@ class MyApplication : Application(), Application.ActivityLifecycleCallbacks,
     }
 
     override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {
-
     }
 
     override fun onActivityStarted(activity: Activity) {
@@ -104,26 +102,7 @@ class MyApplication : Application(), Application.ActivityLifecycleCallbacks,
         appOpenAdManager.showAdIfAvailable(activity, onShowAdCompleteListener)
     }
 
-    private fun loadConfig() {
-        val scope = CoroutineScope(Dispatchers.IO)
-        scope.launch {
-            try {
-                val firebaseRemoteConfig = FirebaseRemoteConfig.getInstance()
-                val configSettings = FirebaseRemoteConfigSettings.Builder()
-                    .setMinimumFetchIntervalInSeconds(60)
-                    .build()
-                firebaseRemoteConfig.setConfigSettingsAsync(configSettings).await()
-                firebaseRemoteConfig.setDefaultsAsync(R.xml.remote_config_defaults).await()
-                firebaseRemoteConfig.fetchAndActivate().await()
 
-                // Log để kiểm tra xem cấu hình từ xa có được cập nhật không
-                Timber.tag("HIEUNM").d("Remote config updated: ${firebaseRemoteConfig.info.lastFetchStatus}")
-            } catch (e: Exception) {
-                // Xử lý lỗi khi cập nhật cấu hình từ xa
-                Timber.e(e, "Error updating remote config")
-            }
-        }
-    }
 
 
 

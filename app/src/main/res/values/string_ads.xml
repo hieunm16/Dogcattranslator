@@ -14,6 +14,7 @@
 
     //inter
     <string name="inter_anim_overview" translatable="false">ca-app-pub-3621741958408545/2986876909</string>
+    <string name="inter_anim_process" translatable="false">ca-app-pub-3621741958408545/2986876909</string>
     <string name="inter_anim_detail_sound" translatable="false">ca-app-pub-3621741958408545/5416038629</string>
     <string name="inter_anim_detail_training" translatable="false">ca-app-pub-3621741958408545/1673795234</string>
 

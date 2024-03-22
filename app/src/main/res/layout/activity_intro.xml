@@ -18,13 +18,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/bg_result"
+        android:backgroundTint="#FFAF45"
         android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"
         android:drawableTint="@color/white"
         android:text="@string/next"
@@ -48,13 +49,14 @@
 
     </com.google.android.material.tabs.TabLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:visibility="invisible"
         android:id="@+id/btn_get_started"
         android:layout_width="132dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:backgroundTint="#FFAF45"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="64dp"

@@ -22,7 +22,6 @@ class MultiLangVM @Inject constructor(
     private val languageRepository: LanguageRepo,
 ) : BaseViewModel() {
     private val _languageLiveData: MutableLiveData<List<LanguageUI>> = MutableLiveData()
-    private fun getValueLanguage() = _languageLiveData.toMutableListLiveData { it.copy() }
     val languageLiveData: LiveData<List<LanguageUI>>
         get() = _languageLiveData
 
