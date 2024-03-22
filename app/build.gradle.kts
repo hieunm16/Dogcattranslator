@@ -31,7 +31,7 @@ android {
         minSdk = 24
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0.0"
+        versionName = "1.0.1"
         val formattedDate = SimpleDateFormat("MM.dd.yyyy").format(Date())
         base.archivesBaseName = "AppDogAndCatTranslatorPlank${versionName}(${versionCode})_${formattedDate}"
         multiDexEnabled = true
