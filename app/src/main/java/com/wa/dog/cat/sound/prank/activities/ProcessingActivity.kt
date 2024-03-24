@@ -72,7 +72,7 @@ class ProcessingActivity : AppCompatActivity() {
             if (adConfig.isNotEmpty()) {
                 loadNativeAds(adConfig)
             } else {
-                loadNativeAds(getString(R.string.banner_over_view))
+                loadNativeAds(getString(R.string.native_process))
 
             }
         }
@@ -85,7 +85,7 @@ class ProcessingActivity : AppCompatActivity() {
             if (adConfig.isNotEmpty()) {
                 loadInterAds(adConfig)
             } else {
-                loadInterAds(getString(R.string.inter_anim_overview))
+                loadInterAds(getString(R.string.inter_anim_process))
             }
         }
     }
@@ -162,7 +162,7 @@ class ProcessingActivity : AppCompatActivity() {
                     }
                 mInterstitialAd?.show(this)
 
-                mFirebaseAnalytics?.logEvent("v_inter_ads_home_screen", null)
+                mFirebaseAnalytics?.logEvent("v_inter_ads_result_screen", null)
             } else {
                 // Nếu quảng cáo chưa tải xong, chuyển đến Activity mới ngay lập tức
                 startActivity(intent)
