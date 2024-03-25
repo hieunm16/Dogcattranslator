@@ -12,10 +12,13 @@ import com.google.android.ump.ConsentInformation
 import com.google.android.ump.ConsentRequestParameters
 import com.google.android.ump.UserMessagingPlatform
 import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.remoteconfig.FirebaseRemoteConfig
+import com.wa.dog.cat.sound.prank.R
 import com.wa.dog.cat.sound.prank.databinding.ActivitySplashBinding
 import com.wa.dog.cat.sound.prank.extension.setFullScreen
 import com.wa.dog.cat.sound.prank.utils.Constant
 import com.wa.dog.cat.sound.prank.utils.RemoteConfigHelper
+import com.wa.dog.cat.sound.prank.utils.RemoteConfigKey
 import com.wa.dog.cat.sound.prank.utils.ads.MyApplication
 import kotlin.math.log
 
@@ -38,12 +41,34 @@ class SplashActivity : AppCompatActivity() {
         remoteConfigHelper.loadConfig()
         MobileAds.initialize(this)
 //        setUpCMPAds()
-
-        val application: Application = application
-        (application as MyApplication).loadAd(this)
-        loadOpenAds()
-
+        setUpOpenAds()
     }
+
+
+    private fun setUpOpenAds() {
+        try {
+            val application: MyApplication = application as MyApplication
+
+            if (FirebaseRemoteConfig.getInstance().getBoolean(RemoteConfigKey.SHOW_ADS_OPEN_APP)) {
+                val adConfig = FirebaseRemoteConfig.getInstance().getString(RemoteConfigKey.KEY_SHOW_ADS_OPEN_APP)
+
+                if (adConfig.isNotEmpty()) {
+                    application.loadAd(this, adConfig)
+                    loadOpenAds()
+                } else {
+                    application.loadAd(this, getString(R.string.open_app))
+                    loadOpenAds()
+                }
+            }
+        } catch (e: ClassCastException) {
+            // Handle the ClassCastException here
+            // Log an error or handle it gracefully
+            Log.e("SetUpOpenAds", "Application is not an instance of MyApplication", e)
+            // You can choose to skip loading the ad or load a default ad
+            // loadDefaultAd()
+        }
+    }
+
 
 
     private fun setUpCMPAds(){
@@ -68,7 +93,6 @@ class SplashActivity : AppCompatActivity() {
                     }
                     if (consentInformation.canRequestAds()){
                         //Load Ad
-
 
                     }
 

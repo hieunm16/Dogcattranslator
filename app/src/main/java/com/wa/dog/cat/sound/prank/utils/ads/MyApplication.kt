@@ -90,8 +90,8 @@ class MyApplication : Application(), Application.ActivityLifecycleCallbacks,
 
     }
 
-    fun loadAd(activity: Activity) {
-        appOpenAdManager.loadAd(activity)
+    fun loadAd(activity: Activity, keyAd :String) {
+        appOpenAdManager.loadAd(activity,keyAd)
     }
 
     interface OnShowAdCompleteListener {
@@ -112,14 +112,13 @@ class MyApplication : Application(), Application.ActivityLifecycleCallbacks,
         var isShowingAd = false
             private set
 
-        fun loadAd(context: Context) {
+        fun loadAd(context: Context,keyAd: String) {
             if (isLoadingAd || isAdAvailable()) {
                 return
             }
-
             isLoadingAd = true
             val request = AdRequest.Builder().build()
-            AppOpenAd.load(context, context.getString(R.string.open_app), request, object : AppOpenAd.AppOpenAdLoadCallback() {
+            AppOpenAd.load(context, keyAd, request, object : AppOpenAd.AppOpenAdLoadCallback() {
                 override fun onAdFailedToLoad(loadAdError: LoadAdError) {
                     super.onAdFailedToLoad(loadAdError)
                     isLoadingAd = false

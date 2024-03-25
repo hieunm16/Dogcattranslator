@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
 import android.os.Handler
+import android.util.Log
 import android.view.View
 import androidx.annotation.RequiresApi
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
@@ -22,6 +23,7 @@ import com.wa.dog.cat.sound.prank.utils.RemoteConfigKey
 import com.wa.dog.cat.sound.prank.utils.ads.NativeAdsUtils
 import com.wa.dog.cat.sound.prank.utils.device.DeviceUtils
 import java.io.File
+import java.io.IOException
 import java.util.Random
 
 class ResultActivity : AppCompatActivity() {
@@ -82,9 +84,11 @@ class ResultActivity : AppCompatActivity() {
     // Function to play llVoiceBefore
     private fun playBefore() {
         binding.llVoiceBefore.icPlay.setBackgroundResource(R.drawable.ic_pause_result)
-        if (!mediaPlayer.isPlaying) {
+        try {
+            val filePath = getRecordingFilePath()
+
             mediaPlayer.reset()
-            mediaPlayer.setDataSource(getRecordingFilePath())
+            mediaPlayer.setDataSource(filePath)
             mediaPlayer.prepareAsync()
             binding.llVoiceBefore.ltLoading.cancelAnimation()
 
@@ -99,12 +103,14 @@ class ResultActivity : AppCompatActivity() {
                 binding.llVoiceBefore.icPlay.setBackgroundResource(R.drawable.ic_play_result)
                 isPlayingBefore = false
             }
-        } else {
-            mediaPlayer.start()
-            setupLottie()
+            isPlayingBefore = true
+        } catch (e: IOException) {
+            // Handle IOException
+            Log.e("playBefore", "IOException: ${e.message}", e)
+            // Display an error message to the user or handle it gracefully
         }
-        isPlayingBefore = true
     }
+
 
     // Function to play llVoiceAfter
     private fun playAfter() {
@@ -218,41 +224,6 @@ class ResultActivity : AppCompatActivity() {
             return ""
         }
     }
-
-//    private fun playRecording() {
-//        val filePath = getRecordingFilePath()
-//
-//        if (filePath.isNotEmpty()) {
-//            try {
-//                mediaPlayer.setDataSource(filePath)
-//
-//                // Sử dụng prepareAsync để chuẩn bị đồng bộ
-//                mediaPlayer.prepareAsync()
-//
-//                mediaPlayer.setOnPreparedListener {
-//                    // Khi MediaPlayer đã chuẩn bị xong, bắt đầu phát
-//                    mediaPlayer.start()
-//                }
-//
-//                mediaPlayer.setOnCompletionListener {
-//                    // Đảm bảo giải phóng MediaPlayer sau khi phát xong
-//                    mediaPlayer.release()
-//                }
-//            } catch (e: Exception) {
-//                e.printStackTrace()
-//
-//                // In thông báo lỗi vào Logcat
-//                Log.e("MediaPlayerError", "Error while playing recording: ${e.message}")
-//
-//                // Hiển thị thông báo lỗi cho người dùng (có thể thay đổi tùy ý)
-//                Toast.makeText(this, "Error playing recording", Toast.LENGTH_SHORT).show()
-//            }
-//        } else {
-//            // Hiển thị thông báo khi không tìm thấy tệp ghi âm
-//            Toast.makeText(this, "File not found", Toast.LENGTH_SHORT).show()
-//        }
-//    }
-
 
     override fun onStop() {
         super.onStop()

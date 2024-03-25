@@ -89,6 +89,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_weight="1"
                     android:minWidth="120dp"
+                    android:visibility="gone"
                     android:minHeight="120dp" />
 
                 <Button
