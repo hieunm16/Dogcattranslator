@@ -30,8 +30,8 @@ android {
         applicationId = "com.wa.dog.cat.sound.prank"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0.1"
+        versionCode = 2
+        versionName = "1.1.0"
         val formattedDate = SimpleDateFormat("MM.dd.yyyy").format(Date())
         base.archivesBaseName = "AppDogAndCatTranslatorPlank${versionName}(${versionCode})_${formattedDate}"
         multiDexEnabled = true
