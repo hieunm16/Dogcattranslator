@@ -23,6 +23,7 @@ import com.wa.dog.cat.sound.prank.activities.SplashActivity
 import com.wa.dog.cat.sound.prank.databinding.AdNativeVideoBinding
 import com.wa.dog.cat.sound.prank.databinding.FragmentWhistleBinding
 import com.wa.dog.cat.sound.prank.extension.gone
+import com.wa.dog.cat.sound.prank.extension.visible
 import com.wa.dog.cat.sound.prank.utils.RemoteConfigKey
 import com.wa.dog.cat.sound.prank.utils.ads.BannerUtils
 import com.wa.dog.cat.sound.prank.utils.ads.NativeAdsUtils
@@ -67,6 +68,7 @@ class WhistleFragment : Fragment() {
         if (FirebaseRemoteConfig.getInstance()
                 .getBoolean(RemoteConfigKey.SHOW_ADS_NATIVE_WHISTLE)
         ) {
+            binding.rlNative.visible()
             val adConfig = FirebaseRemoteConfig.getInstance()
                 .getString(RemoteConfigKey.KEY_SHOW_ADS_NATIVE_WHISTLE)
             if (adConfig.isNotEmpty()) {
@@ -74,6 +76,9 @@ class WhistleFragment : Fragment() {
             } else {
                 loadNativeAds(getString(R.string.native_whistle))
             }
+        }else{
+            binding.rlNative.gone()
+
         }
     }
 
@@ -117,7 +122,8 @@ class WhistleFragment : Fragment() {
     /**/
 
     private fun loadNativeAds(keyAds: String) {
-        if (!DeviceUtils.checkInternetConnection(requireContext())) {
+        if (!DeviceUtils.checkInternetConnection(requireContext()) || FirebaseRemoteConfig.getInstance()
+                .getBoolean(RemoteConfigKey.SHOW_ADS_NATIVE_WHISTLE) ) {
             binding.rlNative.gone()
             return
         }

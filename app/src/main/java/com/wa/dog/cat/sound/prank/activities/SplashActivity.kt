@@ -59,6 +59,8 @@ class SplashActivity : AppCompatActivity() {
                     application.loadAd(this, getString(R.string.open_app))
                     loadOpenAds()
                 }
+            }else{
+                openChooseLanguageActivity()
             }
         } catch (e: ClassCastException) {
             // Handle the ClassCastException here

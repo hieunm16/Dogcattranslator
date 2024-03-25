@@ -36,6 +36,7 @@ import com.wa.dog.cat.sound.prank.adapter.SoundAdapter
 import com.wa.dog.cat.sound.prank.databinding.AdNativeVideoBinding
 import com.wa.dog.cat.sound.prank.databinding.FragmentSoundBinding
 import com.wa.dog.cat.sound.prank.extension.gone
+import com.wa.dog.cat.sound.prank.extension.visible
 import com.wa.dog.cat.sound.prank.model.SoundItem
 import com.wa.dog.cat.sound.prank.utils.MediaPlayerUtils
 import com.wa.dog.cat.sound.prank.utils.RemoteConfigKey
@@ -140,6 +141,8 @@ class SoundFragment : Fragment() {
     override fun onStart() {
         super.onStart()
         if (FirebaseRemoteConfig.getInstance().getBoolean(RemoteConfigKey.SHOW_ADS_NATIVE_SOUND)) {
+            binding.rlNative.visible()
+
             val adConfig = FirebaseRemoteConfig.getInstance()
                 .getString(RemoteConfigKey.KEY_SHOW_ADS_NATIVE_SOUND)
             if (adConfig.isNotEmpty()) {
@@ -148,6 +151,9 @@ class SoundFragment : Fragment() {
                 loadNativeAds(getString(R.string.native_sound))
 
             }
+        }else{
+            binding.rlNative.gone()
+
         }
 
         if (FirebaseRemoteConfig.getInstance().getBoolean(RemoteConfigKey.SHOW_ADS_INTER_D_SOUND)) {
@@ -363,7 +369,7 @@ class SoundFragment : Fragment() {
     }
 
     private fun loadNativeAds(keyAds: String) {
-        if (!DeviceUtils.checkInternetConnection(requireContext())) {
+        if (!DeviceUtils.checkInternetConnection(requireContext()) || FirebaseRemoteConfig.getInstance().getBoolean(RemoteConfigKey.SHOW_ADS_NATIVE_SOUND) ) {
             binding.rlNative.gone()
             return
         }
